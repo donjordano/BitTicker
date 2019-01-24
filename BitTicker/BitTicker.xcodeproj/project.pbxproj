@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6157B22A3BE470DF3B336C65 /* Pods_BitTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D569EA88B264490F2BDEEE3B /* Pods_BitTicker.framework */; };
+		BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */; };
+		BCFAAFFA21FA0D9400A59813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF921FA0D9400A59813 /* ViewController.swift */; };
+		BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFB21FA0D9400A59813 /* Main.storyboard */; };
+		BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */; };
+		BCFAB00221FA0D9500A59813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */; };
+		BCFAB00D21FA0D9500A59813 /* BitTickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB00C21FA0D9500A59813 /* BitTickerTests.swift */; };
+		BCFAB02B21FA0E7900A59813 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB01E21FA0E7900A59813 /* UIEdgeInsets.swift */; };
+		BCFAB02C21FA0E7900A59813 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02021FA0E7900A59813 /* UIColor.swift */; };
+		BCFAB02D21FA0E7900A59813 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02221FA0E7900A59813 /* Data.swift */; };
+		BCFAB02E21FA0E7900A59813 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02421FA0E7900A59813 /* String.swift */; };
+		BCFAB02F21FA0E7900A59813 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02621FA0E7900A59813 /* UIFont.swift */; };
+		BCFAB03021FA0E7900A59813 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02821FA0E7900A59813 /* UIView.swift */; };
+		BCFAB03121FA0E7900A59813 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02A21FA0E7900A59813 /* Date.swift */; };
+		BCFAB03321FA0FAD00A59813 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03221FA0FAD00A59813 /* Utils.swift */; };
+		BCFAB03521FA107400A59813 /* InternalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03421FA107400A59813 /* InternalNotifications.swift */; };
+		BCFAB03821FA133000A59813 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03721FA133000A59813 /* ReachabilityManager.swift */; };
+		BCFAB03C21FA138A00A59813 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03A21FA138A00A59813 /* Reachability.m */; };
+		FCC2B6393B262635288311C3 /* Pods_BitTickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF6CD6D6BB54C2C2E355644 /* Pods_BitTickerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCFAB00921FA0D9500A59813 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCFAAFEC21FA0D9400A59813 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCFAAFF321FA0D9400A59813;
+			remoteInfo = BitTicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06BEFD2183A9D4640099F8C9 /* Pods-BitTickerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTickerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitTickerTests/Pods-BitTickerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4985F14E9CE299D79C9A1A0C /* Pods-BitTicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker.release.xcconfig"; sourceTree = "<group>"; };
+		65D51DEFCF34329AA6EFB0C2 /* Pods-BitTickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitTickerTests/Pods-BitTickerTests.release.xcconfig"; sourceTree = "<group>"; };
+		8353EA698BB22C8510F0851A /* Pods-BitTicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker.debug.xcconfig"; sourceTree = "<group>"; };
+		BCFAAFF421FA0D9400A59813 /* BitTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BCFAAFF921FA0D9400A59813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCFAAFFC21FA0D9400A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCFAB00121FA0D9500A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BCFAB00321FA0D9500A59813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFAB00821FA0D9500A59813 /* BitTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCFAB00C21FA0D9500A59813 /* BitTickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitTickerTests.swift; sourceTree = "<group>"; };
+		BCFAB00E21FA0D9500A59813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFAB01E21FA0E7900A59813 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
+		BCFAB02021FA0E7900A59813 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		BCFAB02221FA0E7900A59813 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		BCFAB02421FA0E7900A59813 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		BCFAB02621FA0E7900A59813 /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		BCFAB02821FA0E7900A59813 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		BCFAB02A21FA0E7900A59813 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		BCFAB03221FA0FAD00A59813 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BCFAB03421FA107400A59813 /* InternalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalNotifications.swift; sourceTree = "<group>"; };
+		BCFAB03721FA133000A59813 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		BCFAB03921FA138900A59813 /* BitTicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitTicker-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCFAB03A21FA138A00A59813 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../../../../iMarvel/iMarvel/iMarvel/Managers/Reachability Manager/Reachability.m"; sourceTree = "<group>"; };
+		BCFAB03B21FA138A00A59813 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../../../../iMarvel/iMarvel/iMarvel/Managers/Reachability Manager/Reachability.h"; sourceTree = "<group>"; };
+		D569EA88B264490F2BDEEE3B /* Pods_BitTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFF6CD6D6BB54C2C2E355644 /* Pods_BitTickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCFAAFF121FA0D9400A59813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6157B22A3BE470DF3B336C65 /* Pods_BitTicker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFAB00521FA0D9500A59813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCC2B6393B262635288311C3 /* Pods_BitTickerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5ECEA3F2F299764D05F250F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8353EA698BB22C8510F0851A /* Pods-BitTicker.debug.xcconfig */,
+				4985F14E9CE299D79C9A1A0C /* Pods-BitTicker.release.xcconfig */,
+				06BEFD2183A9D4640099F8C9 /* Pods-BitTickerTests.debug.xcconfig */,
+				65D51DEFCF34329AA6EFB0C2 /* Pods-BitTickerTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BCFAAFEB21FA0D9400A59813 = {
+			isa = PBXGroup;
+			children = (
+				BCFAAFF621FA0D9400A59813 /* BitTicker */,
+				BCFAB00B21FA0D9500A59813 /* BitTickerTests */,
+				BCFAAFF521FA0D9400A59813 /* Products */,
+				5ECEA3F2F299764D05F250F4 /* Pods */,
+				E1A806701EDD551DBA30331D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCFAAFF521FA0D9400A59813 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAAFF421FA0D9400A59813 /* BitTicker.app */,
+				BCFAB00821FA0D9500A59813 /* BitTickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCFAAFF621FA0D9400A59813 /* BitTicker */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB01C21FA0E2900A59813 /* Views */,
+				BCFAB01B21FA0E2000A59813 /* Managers */,
+				BCFAB01A21FA0E1600A59813 /* Network */,
+				BCFAB01921FA0E0900A59813 /* Resources */,
+				BCFAB01821FA0DFA00A59813 /* Extensions */,
+				BCFAB01721FA0DDB00A59813 /* Utils */,
+				BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */,
+				BCFAAFF921FA0D9400A59813 /* ViewController.swift */,
+				BCFAAFFB21FA0D9400A59813 /* Main.storyboard */,
+				BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */,
+				BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */,
+				BCFAB00321FA0D9500A59813 /* Info.plist */,
+				BCFAB03921FA138900A59813 /* BitTicker-Bridging-Header.h */,
+			);
+			path = BitTicker;
+			sourceTree = "<group>";
+		};
+		BCFAB00B21FA0D9500A59813 /* BitTickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB00C21FA0D9500A59813 /* BitTickerTests.swift */,
+				BCFAB00E21FA0D9500A59813 /* Info.plist */,
+			);
+			path = BitTickerTests;
+			sourceTree = "<group>";
+		};
+		BCFAB01721FA0DDB00A59813 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB03221FA0FAD00A59813 /* Utils.swift */,
+				BCFAB03421FA107400A59813 /* InternalNotifications.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BCFAB01821FA0DFA00A59813 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB02121FA0E7900A59813 /* Data */,
+				BCFAB02921FA0E7900A59813 /* Date */,
+				BCFAB02321FA0E7900A59813 /* String */,
+				BCFAB01F21FA0E7900A59813 /* UIColor */,
+				BCFAB01D21FA0E7900A59813 /* UIEdgeInsets */,
+				BCFAB02521FA0E7900A59813 /* UIFont */,
+				BCFAB02721FA0E7900A59813 /* UIView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BCFAB01921FA0E0900A59813 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BCFAB01A21FA0E1600A59813 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCFAB01B21FA0E2000A59813 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB03621FA131F00A59813 /* Reachability Manager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BCFAB01C21FA0E2900A59813 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCFAB01D21FA0E7900A59813 /* UIEdgeInsets */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB01E21FA0E7900A59813 /* UIEdgeInsets.swift */,
+			);
+			path = UIEdgeInsets;
+			sourceTree = "<group>";
+		};
+		BCFAB01F21FA0E7900A59813 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB02021FA0E7900A59813 /* UIColor.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		BCFAB02121FA0E7900A59813 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB02221FA0E7900A59813 /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BCFAB02321FA0E7900A59813 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB02421FA0E7900A59813 /* String.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		BCFAB02521FA0E7900A59813 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB02621FA0E7900A59813 /* UIFont.swift */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		BCFAB02721FA0E7900A59813 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB02821FA0E7900A59813 /* UIView.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		BCFAB02921FA0E7900A59813 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB02A21FA0E7900A59813 /* Date.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		BCFAB03621FA131F00A59813 /* Reachability Manager */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB03B21FA138A00A59813 /* Reachability.h */,
+				BCFAB03A21FA138A00A59813 /* Reachability.m */,
+				BCFAB03721FA133000A59813 /* ReachabilityManager.swift */,
+			);
+			path = "Reachability Manager";
+			sourceTree = "<group>";
+		};
+		E1A806701EDD551DBA30331D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D569EA88B264490F2BDEEE3B /* Pods_BitTicker.framework */,
+				DFF6CD6D6BB54C2C2E355644 /* Pods_BitTickerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCFAAFF321FA0D9400A59813 /* BitTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFAB01121FA0D9500A59813 /* Build configuration list for PBXNativeTarget "BitTicker" */;
+			buildPhases = (
+				99EDA6325068906528FC3E2A /* [CP] Check Pods Manifest.lock */,
+				BCFAAFF021FA0D9400A59813 /* Sources */,
+				BCFAAFF121FA0D9400A59813 /* Frameworks */,
+				BCFAAFF221FA0D9400A59813 /* Resources */,
+				21DAF7A5520C0590CF5EB2EB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitTicker;
+			productName = BitTicker;
+			productReference = BCFAAFF421FA0D9400A59813 /* BitTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCFAB00721FA0D9500A59813 /* BitTickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCFAB01421FA0D9500A59813 /* Build configuration list for PBXNativeTarget "BitTickerTests" */;
+			buildPhases = (
+				AC2BEF4090044D2D49AD8E69 /* [CP] Check Pods Manifest.lock */,
+				BCFAB00421FA0D9500A59813 /* Sources */,
+				BCFAB00521FA0D9500A59813 /* Frameworks */,
+				BCFAB00621FA0D9500A59813 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCFAB00A21FA0D9500A59813 /* PBXTargetDependency */,
+			);
+			name = BitTickerTests;
+			productName = BitTickerTests;
+			productReference = BCFAB00821FA0D9500A59813 /* BitTickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCFAAFEC21FA0D9400A59813 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Ivan Yordanov";
+				TargetAttributes = {
+					BCFAAFF321FA0D9400A59813 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+					BCFAB00721FA0D9500A59813 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = BCFAAFF321FA0D9400A59813;
+					};
+				};
+			};
+			buildConfigurationList = BCFAAFEF21FA0D9400A59813 /* Build configuration list for PBXProject "BitTicker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCFAAFEB21FA0D9400A59813;
+			productRefGroup = BCFAAFF521FA0D9400A59813 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCFAAFF321FA0D9400A59813 /* BitTicker */,
+				BCFAB00721FA0D9500A59813 /* BitTickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCFAAFF221FA0D9400A59813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFAB00221FA0D9500A59813 /* LaunchScreen.storyboard in Resources */,
+				BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */,
+				BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFAB00621FA0D9500A59813 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21DAF7A5520C0590CF5EB2EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftWebSocket/SwiftWebSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftWebSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99EDA6325068906528FC3E2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitTicker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2BEF4090044D2D49AD8E69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitTickerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCFAAFF021FA0D9400A59813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFAB03C21FA138A00A59813 /* Reachability.m in Sources */,
+				BCFAB03021FA0E7900A59813 /* UIView.swift in Sources */,
+				BCFAB02E21FA0E7900A59813 /* String.swift in Sources */,
+				BCFAAFFA21FA0D9400A59813 /* ViewController.swift in Sources */,
+				BCFAB02D21FA0E7900A59813 /* Data.swift in Sources */,
+				BCFAB03821FA133000A59813 /* ReachabilityManager.swift in Sources */,
+				BCFAB02F21FA0E7900A59813 /* UIFont.swift in Sources */,
+				BCFAB03321FA0FAD00A59813 /* Utils.swift in Sources */,
+				BCFAB02C21FA0E7900A59813 /* UIColor.swift in Sources */,
+				BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */,
+				BCFAB03121FA0E7900A59813 /* Date.swift in Sources */,
+				BCFAB02B21FA0E7900A59813 /* UIEdgeInsets.swift in Sources */,
+				BCFAB03521FA107400A59813 /* InternalNotifications.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCFAB00421FA0D9500A59813 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCFAB00D21FA0D9500A59813 /* BitTickerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCFAB00A21FA0D9500A59813 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCFAAFF321FA0D9400A59813 /* BitTicker */;
+			targetProxy = BCFAB00921FA0D9500A59813 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BCFAAFFB21FA0D9400A59813 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFAAFFC21FA0D9400A59813 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCFAB00121FA0D9500A59813 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BCFAB00F21FA0D9500A59813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BCFAB01021FA0D9500A59813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BCFAB01221FA0D9500A59813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8353EA698BB22C8510F0851A /* Pods-BitTicker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SWF6VNBLT;
+				INFOPLIST_FILE = BitTicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.komyagency.BitTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BitTicker/Managers/Reachability Manager/BitTicker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BCFAB01321FA0D9500A59813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4985F14E9CE299D79C9A1A0C /* Pods-BitTicker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SWF6VNBLT;
+				INFOPLIST_FILE = BitTicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.komyagency.BitTicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BitTicker/Managers/Reachability Manager/BitTicker-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BCFAB01521FA0D9500A59813 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06BEFD2183A9D4640099F8C9 /* Pods-BitTickerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SWF6VNBLT;
+				INFOPLIST_FILE = BitTickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.komyagency.BitTickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitTicker.app/BitTicker";
+			};
+			name = Debug;
+		};
+		BCFAB01621FA0D9500A59813 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D51DEFCF34329AA6EFB0C2 /* Pods-BitTickerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SWF6VNBLT;
+				INFOPLIST_FILE = BitTickerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.komyagency.BitTickerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitTicker.app/BitTicker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCFAAFEF21FA0D9400A59813 /* Build configuration list for PBXProject "BitTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFAB00F21FA0D9500A59813 /* Debug */,
+				BCFAB01021FA0D9500A59813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFAB01121FA0D9500A59813 /* Build configuration list for PBXNativeTarget "BitTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFAB01221FA0D9500A59813 /* Debug */,
+				BCFAB01321FA0D9500A59813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCFAB01421FA0D9500A59813 /* Build configuration list for PBXNativeTarget "BitTickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCFAB01521FA0D9500A59813 /* Debug */,
+				BCFAB01621FA0D9500A59813 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCFAAFEC21FA0D9400A59813 /* Project object */;
+}

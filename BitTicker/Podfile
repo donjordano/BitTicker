@@ -1,0 +1,21 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '11.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'BitTicker' do
+    # Pods for BitTicker
+    
+    #SVProgressHUD
+    pod 'SVProgressHUD'
+
+    #SwiftWebSocket
+    pod 'SwiftWebSocket'
+
+  target 'BitTickerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
