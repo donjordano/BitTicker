@@ -8,8 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		6157B22A3BE470DF3B336C65 /* Pods_BitTicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D569EA88B264490F2BDEEE3B /* Pods_BitTicker.framework */; };
+		BC0F27BC21FC4C5D008032D3 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27BB21FC4C5D008032D3 /* Ticker.swift */; };
+		BC0F27BE21FC4D57008032D3 /* BitPoloniexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27BD21FC4D57008032D3 /* BitPoloniexService.swift */; };
+		BC0F27C221FC4FCD008032D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC0F27C121FC4FCD008032D3 /* GoogleService-Info.plist */; };
+		BC0F27C521FC5016008032D3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27C421FC5016008032D3 /* RootViewController.swift */; };
+		BC0F27C921FC5289008032D3 /* RootContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27C821FC5289008032D3 /* RootContract.swift */; };
+		BC0F27D121FC5615008032D3 /* LoginContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27D021FC5615008032D3 /* LoginContracts.swift */; };
+		BC0F27D321FC562A008032D3 /* LoginIneractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27D221FC562A008032D3 /* LoginIneractor.swift */; };
+		BC0F27D521FC564E008032D3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27D421FC564E008032D3 /* LoginPresenter.swift */; };
+		BC0F27D721FC5662008032D3 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27D621FC5662008032D3 /* LoginRouter.swift */; };
+		BC0F27D921FC567F008032D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27D821FC567F008032D3 /* LoginViewController.swift */; };
+		BC0F27DB21FC5712008032D3 /* LoginStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0F27DA21FC5712008032D3 /* LoginStoryboard.storyboard */; };
+		BC0F27DD21FC5AB3008032D3 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27DC21FC5AB3008032D3 /* RootRouter.swift */; };
+		BC0F27E221FC6385008032D3 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27E121FC6385008032D3 /* R.generated.swift */; };
+		BC0F27E421FC974C008032D3 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27E321FC974C008032D3 /* ReachabilityManager.swift */; };
+		BC0F27E721FC9762008032D3 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27E521FC9762008032D3 /* Reachability.m */; };
+		BC0F27EE21FC98B5008032D3 /* PairsListContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27ED21FC98B4008032D3 /* PairsListContracts.swift */; };
+		BC0F27F021FC98DA008032D3 /* PairsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27EF21FC98DA008032D3 /* PairsListInteractor.swift */; };
+		BC0F27F221FC98E9008032D3 /* PairsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27F121FC98E9008032D3 /* PairsListPresenter.swift */; };
+		BC0F27F421FC98F7008032D3 /* PairsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27F321FC98F7008032D3 /* PairsListRouter.swift */; };
+		BC0F27F621FC9908008032D3 /* PairsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27F521FC9908008032D3 /* PairsListViewController.swift */; };
+		BC0F27F821FC991B008032D3 /* PairsListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0F27F721FC991B008032D3 /* PairsListStoryboard.storyboard */; };
+		BC0F280021FC99B4008032D3 /* PairDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F27FF21FC99B4008032D3 /* PairDetailContracts.swift */; };
+		BC0F280221FC99C6008032D3 /* PairDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280121FC99C6008032D3 /* PairDetailInteractor.swift */; };
+		BC0F280421FC99DC008032D3 /* PairDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280321FC99DC008032D3 /* PairDetailPresenter.swift */; };
+		BC0F280621FC99ED008032D3 /* PairDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280521FC99ED008032D3 /* PairDetailRouter.swift */; };
+		BC0F280821FC9A03008032D3 /* PairDetailiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280721FC9A03008032D3 /* PairDetailiViewController.swift */; };
+		BC0F280A21FC9A14008032D3 /* PairDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0F280921FC9A14008032D3 /* PairDetailStoryboard.storyboard */; };
 		BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */; };
-		BCFAAFFA21FA0D9400A59813 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF921FA0D9400A59813 /* ViewController.swift */; };
 		BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFB21FA0D9400A59813 /* Main.storyboard */; };
 		BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */; };
 		BCFAB00221FA0D9500A59813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */; };
@@ -23,8 +49,8 @@
 		BCFAB03121FA0E7900A59813 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02A21FA0E7900A59813 /* Date.swift */; };
 		BCFAB03321FA0FAD00A59813 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03221FA0FAD00A59813 /* Utils.swift */; };
 		BCFAB03521FA107400A59813 /* InternalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03421FA107400A59813 /* InternalNotifications.swift */; };
-		BCFAB03821FA133000A59813 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03721FA133000A59813 /* ReachabilityManager.swift */; };
-		BCFAB03C21FA138A00A59813 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03A21FA138A00A59813 /* Reachability.m */; };
+		BCFAB04621FA318900A59813 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB04521FA318900A59813 /* SocketIOManager.swift */; };
+		BCFAB04921FA501B00A59813 /* PairIdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB04821FA501B00A59813 /* PairIdData.swift */; };
 		FCC2B6393B262635288311C3 /* Pods_BitTickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF6CD6D6BB54C2C2E355644 /* Pods_BitTickerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,9 +69,36 @@
 		4985F14E9CE299D79C9A1A0C /* Pods-BitTicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTicker.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker.release.xcconfig"; sourceTree = "<group>"; };
 		65D51DEFCF34329AA6EFB0C2 /* Pods-BitTickerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTickerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitTickerTests/Pods-BitTickerTests.release.xcconfig"; sourceTree = "<group>"; };
 		8353EA698BB22C8510F0851A /* Pods-BitTicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitTicker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker.debug.xcconfig"; sourceTree = "<group>"; };
+		BC0F27BB21FC4C5D008032D3 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		BC0F27BD21FC4D57008032D3 /* BitPoloniexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitPoloniexService.swift; sourceTree = "<group>"; };
+		BC0F27C121FC4FCD008032D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BC0F27C421FC5016008032D3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		BC0F27C821FC5289008032D3 /* RootContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContract.swift; sourceTree = "<group>"; };
+		BC0F27D021FC5615008032D3 /* LoginContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContracts.swift; sourceTree = "<group>"; };
+		BC0F27D221FC562A008032D3 /* LoginIneractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginIneractor.swift; sourceTree = "<group>"; };
+		BC0F27D421FC564E008032D3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		BC0F27D621FC5662008032D3 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		BC0F27D821FC567F008032D3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC0F27DA21FC5712008032D3 /* LoginStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryboard.storyboard; sourceTree = "<group>"; };
+		BC0F27DC21FC5AB3008032D3 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		BC0F27E121FC6385008032D3 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		BC0F27E321FC974C008032D3 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		BC0F27E521FC9762008032D3 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BC0F27E621FC9762008032D3 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BC0F27ED21FC98B4008032D3 /* PairsListContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsListContracts.swift; sourceTree = "<group>"; };
+		BC0F27EF21FC98DA008032D3 /* PairsListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsListInteractor.swift; sourceTree = "<group>"; };
+		BC0F27F121FC98E9008032D3 /* PairsListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsListPresenter.swift; sourceTree = "<group>"; };
+		BC0F27F321FC98F7008032D3 /* PairsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsListRouter.swift; sourceTree = "<group>"; };
+		BC0F27F521FC9908008032D3 /* PairsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairsListViewController.swift; sourceTree = "<group>"; };
+		BC0F27F721FC991B008032D3 /* PairsListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairsListStoryboard.storyboard; sourceTree = "<group>"; };
+		BC0F27FF21FC99B4008032D3 /* PairDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDetailContracts.swift; sourceTree = "<group>"; };
+		BC0F280121FC99C6008032D3 /* PairDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDetailInteractor.swift; sourceTree = "<group>"; };
+		BC0F280321FC99DC008032D3 /* PairDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDetailPresenter.swift; sourceTree = "<group>"; };
+		BC0F280521FC99ED008032D3 /* PairDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDetailRouter.swift; sourceTree = "<group>"; };
+		BC0F280721FC9A03008032D3 /* PairDetailiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDetailiViewController.swift; sourceTree = "<group>"; };
+		BC0F280921FC9A14008032D3 /* PairDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairDetailStoryboard.storyboard; sourceTree = "<group>"; };
 		BCFAAFF421FA0D9400A59813 /* BitTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BCFAAFF921FA0D9400A59813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BCFAAFFC21FA0D9400A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFAB00121FA0D9500A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,10 +115,10 @@
 		BCFAB02A21FA0E7900A59813 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		BCFAB03221FA0FAD00A59813 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BCFAB03421FA107400A59813 /* InternalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalNotifications.swift; sourceTree = "<group>"; };
-		BCFAB03721FA133000A59813 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		BCFAB03921FA138900A59813 /* BitTicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitTicker-Bridging-Header.h"; sourceTree = "<group>"; };
-		BCFAB03A21FA138A00A59813 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../../../../iMarvel/iMarvel/iMarvel/Managers/Reachability Manager/Reachability.m"; sourceTree = "<group>"; };
-		BCFAB03B21FA138A00A59813 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../../../../iMarvel/iMarvel/iMarvel/Managers/Reachability Manager/Reachability.h"; sourceTree = "<group>"; };
+		BCFAB04221FA2B1A00A59813 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		BCFAB04521FA318900A59813 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		BCFAB04821FA501B00A59813 /* PairIdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairIdData.swift; sourceTree = "<group>"; };
 		D569EA88B264490F2BDEEE3B /* Pods_BitTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF6CD6D6BB54C2C2E355644 /* Pods_BitTickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -101,6 +154,210 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BC0F27B521FC4B2F008032D3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		BC0F27B821FC4BB3008032D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27BB21FC4C5D008032D3 /* Ticker.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BC0F27B921FC4BBE008032D3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27C321FC4FFA008032D3 /* Root */,
+				BC0F27CA21FC5582008032D3 /* Login View */,
+				BC0F27C621FC5121008032D3 /* Pairs List */,
+				BC0F27C721FC521A008032D3 /* Pair Detail View */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BC0F27BA21FC4BE4008032D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27BD21FC4D57008032D3 /* BitPoloniexService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BC0F27C321FC4FFA008032D3 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27C421FC5016008032D3 /* RootViewController.swift */,
+				BC0F27C821FC5289008032D3 /* RootContract.swift */,
+				BC0F27DC21FC5AB3008032D3 /* RootRouter.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BC0F27C621FC5121008032D3 /* Pairs List */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27EC21FC9885008032D3 /* Contracts */,
+				BC0F27EB21FC9876008032D3 /* Interactor */,
+				BC0F27EA21FC986F008032D3 /* Presenter */,
+				BC0F27E921FC9867008032D3 /* Router */,
+				BC0F27E821FC9862008032D3 /* View */,
+			);
+			path = "Pairs List";
+			sourceTree = "<group>";
+		};
+		BC0F27C721FC521A008032D3 /* Pair Detail View */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27FE21FC9998008032D3 /* Contracts */,
+				BC0F27FD21FC998F008032D3 /* Interactor */,
+				BC0F27FC21FC9984008032D3 /* Presenter */,
+				BC0F27FA21FC995D008032D3 /* Router */,
+				BC0F27F921FC9958008032D3 /* View */,
+			);
+			path = "Pair Detail View";
+			sourceTree = "<group>";
+		};
+		BC0F27CA21FC5582008032D3 /* Login View */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27CB21FC55C4008032D3 /* Contracts */,
+				BC0F27CC21FC55D6008032D3 /* Interactor */,
+				BC0F27CD21FC55DF008032D3 /* Presenter */,
+				BC0F27CE21FC55E7008032D3 /* Router */,
+				BC0F27CF21FC55F0008032D3 /* View */,
+			);
+			path = "Login View";
+			sourceTree = "<group>";
+		};
+		BC0F27CB21FC55C4008032D3 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27D021FC5615008032D3 /* LoginContracts.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		BC0F27CC21FC55D6008032D3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27D221FC562A008032D3 /* LoginIneractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC0F27CD21FC55DF008032D3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27D421FC564E008032D3 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC0F27CE21FC55E7008032D3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27D621FC5662008032D3 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BC0F27CF21FC55F0008032D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27D821FC567F008032D3 /* LoginViewController.swift */,
+				BC0F27DA21FC5712008032D3 /* LoginStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC0F27E821FC9862008032D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27F521FC9908008032D3 /* PairsListViewController.swift */,
+				BC0F27F721FC991B008032D3 /* PairsListStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC0F27E921FC9867008032D3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27F321FC98F7008032D3 /* PairsListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BC0F27EA21FC986F008032D3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27F121FC98E9008032D3 /* PairsListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC0F27EB21FC9876008032D3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27EF21FC98DA008032D3 /* PairsListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC0F27EC21FC9885008032D3 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27ED21FC98B4008032D3 /* PairsListContracts.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
+		BC0F27F921FC9958008032D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F280721FC9A03008032D3 /* PairDetailiViewController.swift */,
+				BC0F280921FC9A14008032D3 /* PairDetailStoryboard.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC0F27FA21FC995D008032D3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F280521FC99ED008032D3 /* PairDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BC0F27FC21FC9984008032D3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F280321FC99DC008032D3 /* PairDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC0F27FD21FC998F008032D3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F280121FC99C6008032D3 /* PairDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BC0F27FE21FC9998008032D3 /* Contracts */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27FF21FC99B4008032D3 /* PairDetailContracts.swift */,
+			);
+			path = Contracts;
+			sourceTree = "<group>";
+		};
 		BCFAAFEB21FA0D9400A59813 = {
 			isa = PBXGroup;
 			children = (
@@ -124,19 +381,16 @@
 		BCFAAFF621FA0D9400A59813 /* BitTicker */ = {
 			isa = PBXGroup;
 			children = (
-				BCFAB01C21FA0E2900A59813 /* Views */,
-				BCFAB01B21FA0E2000A59813 /* Managers */,
-				BCFAB01A21FA0E1600A59813 /* Network */,
+				BC0F27B521FC4B2F008032D3 /* Application */,
 				BCFAB01921FA0E0900A59813 /* Resources */,
 				BCFAB01821FA0DFA00A59813 /* Extensions */,
+				BC0F27B821FC4BB3008032D3 /* Models */,
+				BCFAB04721FA4FD600A59813 /* Data */,
+				BC0F27B921FC4BBE008032D3 /* Modules */,
+				BC0F27BA21FC4BE4008032D3 /* Services */,
+				BCFAB01A21FA0E1600A59813 /* Network */,
+				BCFAB01B21FA0E2000A59813 /* Managers */,
 				BCFAB01721FA0DDB00A59813 /* Utils */,
-				BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */,
-				BCFAAFF921FA0D9400A59813 /* ViewController.swift */,
-				BCFAAFFB21FA0D9400A59813 /* Main.storyboard */,
-				BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */,
-				BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */,
-				BCFAB00321FA0D9500A59813 /* Info.plist */,
-				BCFAB03921FA138900A59813 /* BitTicker-Bridging-Header.h */,
 			);
 			path = BitTicker;
 			sourceTree = "<group>";
@@ -176,6 +430,13 @@
 		BCFAB01921FA0E0900A59813 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BCFAB03921FA138900A59813 /* BitTicker-Bridging-Header.h */,
+				BC0F27C121FC4FCD008032D3 /* GoogleService-Info.plist */,
+				BCFAAFFB21FA0D9400A59813 /* Main.storyboard */,
+				BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */,
+				BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */,
+				BCFAB00321FA0D9500A59813 /* Info.plist */,
+				BC0F27E121FC6385008032D3 /* R.generated.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -190,16 +451,10 @@
 		BCFAB01B21FA0E2000A59813 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				BCFAB04421FA317C00A59813 /* SocketIOManager */,
 				BCFAB03621FA131F00A59813 /* Reachability Manager */,
 			);
 			path = Managers;
-			sourceTree = "<group>";
-		};
-		BCFAB01C21FA0E2900A59813 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		BCFAB01D21FA0E7900A59813 /* UIEdgeInsets */ = {
@@ -261,16 +516,33 @@
 		BCFAB03621FA131F00A59813 /* Reachability Manager */ = {
 			isa = PBXGroup;
 			children = (
-				BCFAB03B21FA138A00A59813 /* Reachability.h */,
-				BCFAB03A21FA138A00A59813 /* Reachability.m */,
-				BCFAB03721FA133000A59813 /* ReachabilityManager.swift */,
+				BC0F27E621FC9762008032D3 /* Reachability.h */,
+				BC0F27E521FC9762008032D3 /* Reachability.m */,
+				BC0F27E321FC974C008032D3 /* ReachabilityManager.swift */,
 			);
 			path = "Reachability Manager";
+			sourceTree = "<group>";
+		};
+		BCFAB04421FA317C00A59813 /* SocketIOManager */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB04521FA318900A59813 /* SocketIOManager.swift */,
+			);
+			path = SocketIOManager;
+			sourceTree = "<group>";
+		};
+		BCFAB04721FA4FD600A59813 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BCFAB04821FA501B00A59813 /* PairIdData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		E1A806701EDD551DBA30331D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCFAB04221FA2B1A00A59813 /* libz.tbd */,
 				D569EA88B264490F2BDEEE3B /* Pods_BitTicker.framework */,
 				DFF6CD6D6BB54C2C2E355644 /* Pods_BitTickerTests.framework */,
 			);
@@ -285,6 +557,7 @@
 			buildConfigurationList = BCFAB01121FA0D9500A59813 /* Build configuration list for PBXNativeTarget "BitTicker" */;
 			buildPhases = (
 				99EDA6325068906528FC3E2A /* [CP] Check Pods Manifest.lock */,
+				BC0F27DE21FC5F6E008032D3 /* ShellScript */,
 				BCFAAFF021FA0D9400A59813 /* Sources */,
 				BCFAAFF121FA0D9400A59813 /* Frameworks */,
 				BCFAAFF221FA0D9400A59813 /* Resources */,
@@ -363,6 +636,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCFAB00221FA0D9500A59813 /* LaunchScreen.storyboard in Resources */,
+				BC0F27DB21FC5712008032D3 /* LoginStoryboard.storyboard in Resources */,
+				BC0F27C221FC4FCD008032D3 /* GoogleService-Info.plist in Resources */,
+				BC0F280A21FC9A14008032D3 /* PairDetailStoryboard.storyboard in Resources */,
+				BC0F27F821FC991B008032D3 /* PairsListStoryboard.storyboard in Resources */,
 				BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */,
 				BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */,
 			);
@@ -387,15 +664,23 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BitTicker/Pods-BitTicker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftWebSocket/SwiftWebSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftWebSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,6 +731,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BC0F27DE21FC5F6E008032D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -453,18 +757,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCFAB03C21FA138A00A59813 /* Reachability.m in Sources */,
+				BC0F27BE21FC4D57008032D3 /* BitPoloniexService.swift in Sources */,
+				BC0F27EE21FC98B5008032D3 /* PairsListContracts.swift in Sources */,
+				BC0F27E221FC6385008032D3 /* R.generated.swift in Sources */,
 				BCFAB03021FA0E7900A59813 /* UIView.swift in Sources */,
+				BC0F27D921FC567F008032D3 /* LoginViewController.swift in Sources */,
+				BC0F27E721FC9762008032D3 /* Reachability.m in Sources */,
+				BC0F27F221FC98E9008032D3 /* PairsListPresenter.swift in Sources */,
+				BC0F280621FC99ED008032D3 /* PairDetailRouter.swift in Sources */,
 				BCFAB02E21FA0E7900A59813 /* String.swift in Sources */,
-				BCFAAFFA21FA0D9400A59813 /* ViewController.swift in Sources */,
 				BCFAB02D21FA0E7900A59813 /* Data.swift in Sources */,
-				BCFAB03821FA133000A59813 /* ReachabilityManager.swift in Sources */,
 				BCFAB02F21FA0E7900A59813 /* UIFont.swift in Sources */,
+				BC0F27C521FC5016008032D3 /* RootViewController.swift in Sources */,
+				BC0F27D721FC5662008032D3 /* LoginRouter.swift in Sources */,
 				BCFAB03321FA0FAD00A59813 /* Utils.swift in Sources */,
+				BC0F27D521FC564E008032D3 /* LoginPresenter.swift in Sources */,
+				BC0F27BC21FC4C5D008032D3 /* Ticker.swift in Sources */,
+				BC0F280221FC99C6008032D3 /* PairDetailInteractor.swift in Sources */,
+				BC0F280821FC9A03008032D3 /* PairDetailiViewController.swift in Sources */,
+				BCFAB04921FA501B00A59813 /* PairIdData.swift in Sources */,
+				BC0F27D321FC562A008032D3 /* LoginIneractor.swift in Sources */,
 				BCFAB02C21FA0E7900A59813 /* UIColor.swift in Sources */,
+				BC0F27DD21FC5AB3008032D3 /* RootRouter.swift in Sources */,
+				BC0F27F421FC98F7008032D3 /* PairsListRouter.swift in Sources */,
+				BC0F27E421FC974C008032D3 /* ReachabilityManager.swift in Sources */,
+				BC0F27F021FC98DA008032D3 /* PairsListInteractor.swift in Sources */,
 				BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */,
+				BC0F27C921FC5289008032D3 /* RootContract.swift in Sources */,
+				BCFAB04621FA318900A59813 /* SocketIOManager.swift in Sources */,
+				BC0F280021FC99B4008032D3 /* PairDetailContracts.swift in Sources */,
 				BCFAB03121FA0E7900A59813 /* Date.swift in Sources */,
 				BCFAB02B21FA0E7900A59813 /* UIEdgeInsets.swift in Sources */,
+				BC0F27D121FC5615008032D3 /* LoginContracts.swift in Sources */,
+				BC0F280421FC99DC008032D3 /* PairDetailPresenter.swift in Sources */,
+				BC0F27F621FC9908008032D3 /* PairsListViewController.swift in Sources */,
 				BCFAB03521FA107400A59813 /* InternalNotifications.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -631,14 +957,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SWF6VNBLT;
-				INFOPLIST_FILE = BitTicker/Info.plist;
+				INFOPLIST_FILE = BitTicker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.komyagency.BitTicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "BitTicker/Managers/Reachability Manager/BitTicker-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BitTicker/Resources/BitTicker-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -653,14 +979,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SWF6VNBLT;
-				INFOPLIST_FILE = BitTicker/Info.plist;
+				INFOPLIST_FILE = BitTicker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.komyagency.BitTicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "BitTicker/Managers/Reachability Manager/BitTicker-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "BitTicker/Resources/BitTicker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

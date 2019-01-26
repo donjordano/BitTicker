@@ -7,7 +7,7 @@
 import Foundation
 
 extension UIColor {
-    
+
     /**
      * Get the UIColor value from hex
      *
@@ -17,7 +17,7 @@ extension UIColor {
     public class func colorWithHex(hex:String) -> UIColor {
         return UIColor.colorWithHex(hex: hex, alpha: 1.0)
     }
-    
+
     /**
      * Get the UIColor value from hex and alpha
      *
@@ -27,18 +27,18 @@ extension UIColor {
      */
     public class func colorWithHex(hex:String, alpha:CGFloat) -> UIColor {
         var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
-        
+
         if (cString.hasPrefix("#")) {
             cString.remove(at: cString.startIndex)
         }
-        
+
         if ((cString.count) != 6) {
             return UIColor.gray
         }
-        
+
         var rgbValue:UInt32 = 0
         Scanner(string: cString).scanHexInt32(&rgbValue)
-        
+
         return UIColor(
             red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
             green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
@@ -46,17 +46,17 @@ extension UIColor {
             alpha: CGFloat(alpha)
         )
     }
-    
+
     public class func black() -> UIColor {
         return colorWithHex(hex: "#000000")
     }
-    
+
     public class func white() -> UIColor {
         return colorWithHex(hex: "#FFFFFF")
-    } 
-    
+    }
+
     public class func red() -> UIColor {
         return .red
     }
-    
+
 }

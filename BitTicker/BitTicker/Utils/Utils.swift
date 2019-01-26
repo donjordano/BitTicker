@@ -10,14 +10,14 @@ import Foundation
 
 class Utils {
     
-    static let shared: Utils = { return Utils() }()
-    
-    public func screenWidth() -> CGFloat {
-        return UIScreen.main.bounds.size.width
-    }
-    
-    public func screenHeight() -> CGFloat {
-        return UIScreen.main.bounds.size.height
-    }
+//    static let shared: Utils = { return Utils() }()
+//    
+//    public func screenWidth() -> CGFloat {
+//        return UIScreen.main.bounds.size.width
+//    }
+//    
+//    public func screenHeight() -> CGFloat {
+//        return UIScreen.main.bounds.size.height
+//    }
     
 }
