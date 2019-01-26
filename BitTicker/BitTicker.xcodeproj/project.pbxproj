@@ -49,7 +49,6 @@
 		BCFAB03121FA0E7900A59813 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02A21FA0E7900A59813 /* Date.swift */; };
 		BCFAB03321FA0FAD00A59813 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03221FA0FAD00A59813 /* Utils.swift */; };
 		BCFAB03521FA107400A59813 /* InternalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB03421FA107400A59813 /* InternalNotifications.swift */; };
-		BCFAB04621FA318900A59813 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB04521FA318900A59813 /* SocketIOManager.swift */; };
 		BCFAB04921FA501B00A59813 /* PairIdData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB04821FA501B00A59813 /* PairIdData.swift */; };
 		FCC2B6393B262635288311C3 /* Pods_BitTickerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF6CD6D6BB54C2C2E355644 /* Pods_BitTickerTests.framework */; };
 /* End PBXBuildFile section */
@@ -117,7 +116,6 @@
 		BCFAB03421FA107400A59813 /* InternalNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalNotifications.swift; sourceTree = "<group>"; };
 		BCFAB03921FA138900A59813 /* BitTicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BitTicker-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCFAB04221FA2B1A00A59813 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		BCFAB04521FA318900A59813 /* SocketIOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
 		BCFAB04821FA501B00A59813 /* PairIdData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairIdData.swift; sourceTree = "<group>"; };
 		D569EA88B264490F2BDEEE3B /* Pods_BitTicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFF6CD6D6BB54C2C2E355644 /* Pods_BitTickerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitTickerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -451,7 +449,6 @@
 		BCFAB01B21FA0E2000A59813 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				BCFAB04421FA317C00A59813 /* SocketIOManager */,
 				BCFAB03621FA131F00A59813 /* Reachability Manager */,
 			);
 			path = Managers;
@@ -521,14 +518,6 @@
 				BC0F27E321FC974C008032D3 /* ReachabilityManager.swift */,
 			);
 			path = "Reachability Manager";
-			sourceTree = "<group>";
-		};
-		BCFAB04421FA317C00A59813 /* SocketIOManager */ = {
-			isa = PBXGroup;
-			children = (
-				BCFAB04521FA318900A59813 /* SocketIOManager.swift */,
-			);
-			path = SocketIOManager;
 			sourceTree = "<group>";
 		};
 		BCFAB04721FA4FD600A59813 /* Data */ = {
@@ -784,7 +773,6 @@
 				BC0F27F021FC98DA008032D3 /* PairsListInteractor.swift in Sources */,
 				BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */,
 				BC0F27C921FC5289008032D3 /* RootContract.swift in Sources */,
-				BCFAB04621FA318900A59813 /* SocketIOManager.swift in Sources */,
 				BC0F280021FC99B4008032D3 /* PairDetailContracts.swift in Sources */,
 				BCFAB03121FA0E7900A59813 /* Date.swift in Sources */,
 				BCFAB02B21FA0E7900A59813 /* UIEdgeInsets.swift in Sources */,
