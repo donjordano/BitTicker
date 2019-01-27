@@ -83,6 +83,7 @@ extension PairsListViewController: UITableViewDataSource, UITableViewDelegate {
         cell.selectionStyle = .none
         
         let pairKey = pair_keys[indexPath.row]
+        
         cell.setup(pairsListData[pairKey]!)
         cell.pairId = pairKey
         
@@ -116,11 +117,11 @@ extension PairsListViewController {
         guard let cell: PairListTableViewCell = pairsTableView.cellForRow(at: path) as? PairListTableViewCell else {
             return
         }
-        
-        /// change percent for this pair
-        cell.percentLabel.text = ticker.lastPrice
-        
-        /// update cell
-        pairsTableView.reloadRows(at: [path], with: .none)
+
+        if cell.pairId == tickerId {
+            /// update cell
+            let priceString = NSString(format: "%.4f", ticker.lastPrice)
+            cell.update(price: priceString as String)
+        }
     }
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,35 +17,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldo-Fm-7My">
-                        <rect key="frame" x="15" y="5" width="180" height="34"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldo-Fm-7My">
+                        <rect key="frame" x="15" y="5" width="120" height="33.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX4-LK-8Db">
+                        <rect key="frame" x="219" y="5" width="140" height="33.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="180" id="0Qx-Eh-v4c"/>
+                            <constraint firstAttribute="width" constant="140" id="c9h-sh-e2l"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX4-LK-8Db">
-                        <rect key="frame" x="259" y="5" width="100" height="34"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="100" id="MCn-fL-vGa"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Wix-CX-kS1">
+                        <rect key="frame" x="326" y="11" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ldo-Fm-7My" firstAttribute="leading" secondItem="U3D-BB-ThS" secondAttribute="leading" constant="15" id="BE4-de-BTW"/>
-                    <constraint firstAttribute="bottom" secondItem="eX4-LK-8Db" secondAttribute="bottom" constant="4.5" id="GjG-lD-4J4"/>
-                    <constraint firstAttribute="bottom" secondItem="ldo-Fm-7My" secondAttribute="bottom" constant="4.5" id="J2d-28-xBc"/>
-                    <constraint firstItem="ldo-Fm-7My" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="top" constant="5" id="O73-C7-bfN"/>
-                    <constraint firstAttribute="trailing" secondItem="eX4-LK-8Db" secondAttribute="trailing" constant="16" id="YRv-cI-Lw9"/>
-                    <constraint firstItem="eX4-LK-8Db" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="top" constant="5" id="ngU-4M-ABm"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="baseline" secondItem="eX4-LK-8Db" secondAttribute="baseline" id="4Mz-eg-3Ti"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="topMargin" constant="-6" id="4xr-e0-Lun"/>
+                    <constraint firstAttribute="trailing" secondItem="eX4-LK-8Db" secondAttribute="trailing" constant="16" id="9md-NE-PQb"/>
+                    <constraint firstItem="eX4-LK-8Db" firstAttribute="leading" secondItem="ldo-Fm-7My" secondAttribute="trailing" constant="84" id="I4Q-Bd-Vi9"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="leading" secondItem="U3D-BB-ThS" secondAttribute="leadingMargin" constant="-1" id="eW2-Gz-xqd"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="firstBaseline" secondItem="eX4-LK-8Db" secondAttribute="firstBaseline" id="jEe-RQ-6bO"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="centerY" secondItem="U3D-BB-ThS" secondAttribute="centerY" id="scm-5w-uWg"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="indicator" destination="Wix-CX-kS1" id="hb8-f9-dt5"/>
                 <outlet property="pairsLabel" destination="ldo-Fm-7My" id="xym-s8-Wzd"/>
                 <outlet property="percentLabel" destination="eX4-LK-8Db" id="G5G-Tk-3GI"/>
             </connections>

@@ -38,6 +38,7 @@
 		BC0F280C21FCC3E0008032D3 /* PairListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */; };
 		BC0F280E21FCC3EB008032D3 /* PairListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */; };
 		BC0F281221FD9B98008032D3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F281121FD9B98008032D3 /* Observable.swift */; };
+		BC766D1B21FDDE67004F11C1 /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC766D1A21FDDE66004F11C1 /* AnimationProtocol.swift */; };
 		BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */; };
 		BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFB21FA0D9400A59813 /* Main.storyboard */; };
 		BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */; };
@@ -102,6 +103,7 @@
 		BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairListTableViewCell.xib; sourceTree = "<group>"; };
 		BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListTableViewCell.swift; sourceTree = "<group>"; };
 		BC0F281121FD9B98008032D3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		BC766D1A21FDDE66004F11C1 /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
 		BCFAAFF421FA0D9400A59813 /* BitTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFAAFFC21FA0D9400A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -382,6 +384,14 @@
 			path = Observable;
 			sourceTree = "<group>";
 		};
+		BC766D1921FDDE43004F11C1 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				BC766D1A21FDDE66004F11C1 /* AnimationProtocol.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		BCFAAFEB21FA0D9400A59813 = {
 			isa = PBXGroup;
 			children = (
@@ -410,6 +420,7 @@
 				BC0F27B821FC4BB3008032D3 /* Models */,
 				BC0F27BA21FC4BE4008032D3 /* Services */,
 				BCFAB01921FA0E0900A59813 /* Resources */,
+				BC766D1921FDDE43004F11C1 /* Animations */,
 				BCFAB01821FA0DFA00A59813 /* Extensions */,
 				BCFAB01A21FA0E1600A59813 /* Network */,
 				BCFAB01B21FA0E2000A59813 /* Managers */,
@@ -775,6 +786,7 @@
 				BC0F27BE21FC4D57008032D3 /* BitPoloniexService.swift in Sources */,
 				BC0F27EE21FC98B5008032D3 /* PairsListContracts.swift in Sources */,
 				BC0F27E221FC6385008032D3 /* R.generated.swift in Sources */,
+				BC766D1B21FDDE67004F11C1 /* AnimationProtocol.swift in Sources */,
 				BCFAB03021FA0E7900A59813 /* UIView.swift in Sources */,
 				BC0F281221FD9B98008032D3 /* Observable.swift in Sources */,
 				BC0F27D921FC567F008032D3 /* LoginViewController.swift in Sources */,

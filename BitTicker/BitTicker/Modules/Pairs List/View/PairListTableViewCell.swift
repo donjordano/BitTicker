@@ -12,11 +12,21 @@ class PairListTableViewCell: UITableViewCell {
     
     @IBOutlet weak var pairsLabel: UILabel!
     @IBOutlet weak var percentLabel: UILabel!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
+    
     var pairId: String = ""
     
     func setup(_ pairString: String) {
         let pairLabelText = pairString.replacingOccurrences(of: "_", with: " - ")
         pairsLabel.text = pairLabelText
+        if (percentLabel.text?.isEmpty)! {
+            indicator.startAnimating()
+        }
+    }
+    
+    func update(price: String) {
+        percentLabel.text = price
+        indicator.stopAnimating()
     }
     
 }
