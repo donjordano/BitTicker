@@ -54,6 +54,10 @@ extension UIColor {
     public class func white() -> UIColor {
         return colorWithHex(hex: "#FFFFFF")
     }
+    
+    public class func darkBlue() -> UIColor {
+        return colorWithHex(hex: "#0D0C28")
+    }
 
     public class func red() -> UIColor {
         return .red
