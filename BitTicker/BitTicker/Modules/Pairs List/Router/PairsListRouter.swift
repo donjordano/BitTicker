@@ -31,8 +31,8 @@ class PairsListRouter: PairsListWireframe {
         return view!
     }
     
-    func presentPairDetailView(forPairId pairId: String) {
-        let pairDetailViewController = PairDetailRouter.assembleModule(pairId)
+    func presentPairDetailView(withTicker ticker: Ticker) {
+        let pairDetailViewController = PairDetailRouter.assembleModule(ticker)
         viewController?.navigationController?.pushViewController(pairDetailViewController, animated: true)
     }
 

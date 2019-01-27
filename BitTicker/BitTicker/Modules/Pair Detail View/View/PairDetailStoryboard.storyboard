@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,67 +14,70 @@
             <objects>
                 <viewController storyboardIdentifier="PairDetailiViewController" id="9ZB-ro-DSq" customClass="PairDetailsViewController" customModule="BitTicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xzk-NZ-cYR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="details_screen" translatesAutoresizingMaskIntoConstraints="NO" id="k6I-sc-gy9">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mz0-Sm-HKR">
-                                <rect key="frame" x="16" y="94" width="343" height="80"/>
+                                <rect key="frame" x="16" y="118" width="343" height="167"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="Xn9-jP-Fde"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Price: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7OP-Zf-TW9">
-                                <rect key="frame" x="16" y="301" width="343" height="40"/>
+                                <rect key="frame" x="16" y="412" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="0rG-yH-KRk"/>
+                                    <constraint firstAttribute="height" constant="40" id="eHR-M0-JYB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lowest ask: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZh-zA-rPu">
-                                <rect key="frame" x="16" y="349" width="343" height="40"/>
+                                <rect key="frame" x="16" y="460" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Z56-jr-AY6"/>
+                                    <constraint firstAttribute="height" constant="40" id="88F-uY-p9Q"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hieghest ask: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgb-uS-MN9">
-                                <rect key="frame" x="16" y="397" width="343" height="40"/>
+                                <rect key="frame" x="16" y="508" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="hcY-uc-nrc"/>
+                                    <constraint firstAttribute="height" constant="40" id="Kwh-Vc-6cR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lowest last 24h: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDn-sF-H3c">
-                                <rect key="frame" x="16" y="445" width="343" height="40"/>
+                                <rect key="frame" x="16" y="556" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="8fk-ix-ORl"/>
+                                    <constraint firstAttribute="height" constant="40" id="evd-RA-Oe2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highest last 24h: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkZ-Au-wH4">
-                                <rect key="frame" x="16" y="493" width="343" height="40"/>
+                                <rect key="frame" x="16" y="604" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="1sx-HY-QSK"/>
+                                    <constraint firstAttribute="height" constant="40" id="2dd-kU-nZt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percent last 24h: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zig-OP-auP">
-                                <rect key="frame" x="16" y="541" width="343" height="40"/>
+                                <rect key="frame" x="16" y="652" width="343" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="nho-l8-0Rg"/>
+                                    <constraint firstAttribute="height" constant="40" id="kvN-fA-Bkn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,31 +86,31 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="trailing" secondItem="BkZ-Au-wH4" secondAttribute="trailing" constant="16" id="15o-og-x4U"/>
-                            <constraint firstItem="zig-OP-auP" firstAttribute="top" secondItem="BkZ-Au-wH4" secondAttribute="bottom" constant="8" id="2DK-NB-ube"/>
-                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="top" secondItem="Bgw-Fd-ddy" secondAttribute="top" constant="74" id="4fH-45-7k5"/>
-                            <constraint firstItem="DZh-zA-rPu" firstAttribute="top" secondItem="7OP-Zf-TW9" secondAttribute="bottom" constant="8" id="F3M-ks-LZI"/>
-                            <constraint firstItem="Fgb-uS-MN9" firstAttribute="top" secondItem="DZh-zA-rPu" secondAttribute="bottom" constant="8" id="FTb-4Z-AkR"/>
-                            <constraint firstItem="7OP-Zf-TW9" firstAttribute="leading" secondItem="Bgw-Fd-ddy" secondAttribute="leading" constant="16" id="MzD-4v-fjJ"/>
-                            <constraint firstItem="hDn-sF-H3c" firstAttribute="top" secondItem="Fgb-uS-MN9" secondAttribute="bottom" constant="8" id="Oqd-he-ym9"/>
-                            <constraint firstItem="hDn-sF-H3c" firstAttribute="leading" secondItem="Bgw-Fd-ddy" secondAttribute="leading" constant="16" id="Q7f-J7-nLw"/>
-                            <constraint firstItem="Fgb-uS-MN9" firstAttribute="leading" secondItem="Bgw-Fd-ddy" secondAttribute="leading" constant="16" id="Qa7-i2-iDj"/>
-                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="trailing" secondItem="DZh-zA-rPu" secondAttribute="trailing" constant="16" id="QdS-rY-zHQ"/>
-                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="bottom" secondItem="Mz0-Sm-HKR" secondAttribute="bottom" constant="493" id="TXv-fF-jOB"/>
-                            <constraint firstItem="k6I-sc-gy9" firstAttribute="top" secondItem="Bgw-Fd-ddy" secondAttribute="top" id="aT1-Sh-Uga"/>
-                            <constraint firstItem="BkZ-Au-wH4" firstAttribute="leading" secondItem="Bgw-Fd-ddy" secondAttribute="leading" constant="16" id="bIc-6E-Sxb"/>
-                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="trailing" secondItem="zig-OP-auP" secondAttribute="trailing" constant="16" id="cIx-QM-67I"/>
-                            <constraint firstItem="BkZ-Au-wH4" firstAttribute="top" secondItem="hDn-sF-H3c" secondAttribute="bottom" constant="8" id="d2H-uF-tAL"/>
-                            <constraint firstItem="k6I-sc-gy9" firstAttribute="centerX" secondItem="Mz0-Sm-HKR" secondAttribute="centerX" id="ejg-RF-Uhg"/>
-                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="trailing" secondItem="7OP-Zf-TW9" secondAttribute="trailing" constant="16" id="inR-OJ-2n0"/>
-                            <constraint firstItem="k6I-sc-gy9" firstAttribute="bottom" secondItem="Bgw-Fd-ddy" secondAttribute="bottom" id="j9f-VC-2Zf"/>
-                            <constraint firstItem="k6I-sc-gy9" firstAttribute="leading" secondItem="xzk-NZ-cYR" secondAttribute="leading" id="kcs-yj-eDH"/>
-                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="trailing" secondItem="hDn-sF-H3c" secondAttribute="trailing" constant="16" id="n0I-IC-nwC"/>
-                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="leading" secondItem="xzk-NZ-cYR" secondAttribute="leadingMargin" id="s0u-b3-aGw"/>
-                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="trailing" secondItem="Fgb-uS-MN9" secondAttribute="trailing" constant="16" id="uhY-P6-Pxf"/>
-                            <constraint firstItem="7OP-Zf-TW9" firstAttribute="top" secondItem="Mz0-Sm-HKR" secondAttribute="bottom" constant="127" id="utt-Lk-JMv"/>
-                            <constraint firstItem="DZh-zA-rPu" firstAttribute="leading" secondItem="Bgw-Fd-ddy" secondAttribute="leading" constant="16" id="v9h-nH-8g4"/>
-                            <constraint firstItem="zig-OP-auP" firstAttribute="leading" secondItem="Bgw-Fd-ddy" secondAttribute="leading" constant="16" id="x7o-Ji-6ie"/>
+                            <constraint firstItem="BkZ-Au-wH4" firstAttribute="top" secondItem="hDn-sF-H3c" secondAttribute="bottom" constant="8" symbolic="YES" id="0KR-AU-7ZP"/>
+                            <constraint firstItem="k6I-sc-gy9" firstAttribute="trailing" secondItem="Bgw-Fd-ddy" secondAttribute="trailing" id="8pE-K5-bVY"/>
+                            <constraint firstItem="DZh-zA-rPu" firstAttribute="trailing" secondItem="Fgb-uS-MN9" secondAttribute="trailing" id="9In-nM-DVI"/>
+                            <constraint firstItem="7OP-Zf-TW9" firstAttribute="trailing" secondItem="DZh-zA-rPu" secondAttribute="trailing" id="AHA-Bs-XeO"/>
+                            <constraint firstItem="BkZ-Au-wH4" firstAttribute="leading" secondItem="zig-OP-auP" secondAttribute="leading" id="BoC-7O-Gh7"/>
+                            <constraint firstItem="hDn-sF-H3c" firstAttribute="leading" secondItem="BkZ-Au-wH4" secondAttribute="leading" id="CEG-9Z-UbK"/>
+                            <constraint firstItem="k6I-sc-gy9" firstAttribute="centerX" secondItem="Mz0-Sm-HKR" secondAttribute="centerX" id="COM-qI-Nj5"/>
+                            <constraint firstItem="DZh-zA-rPu" firstAttribute="top" secondItem="7OP-Zf-TW9" secondAttribute="bottom" constant="8" symbolic="YES" id="EVy-aJ-Gk6"/>
+                            <constraint firstItem="k6I-sc-gy9" firstAttribute="leading" secondItem="xzk-NZ-cYR" secondAttribute="leading" id="I80-lD-Fbp"/>
+                            <constraint firstItem="hDn-sF-H3c" firstAttribute="trailing" secondItem="BkZ-Au-wH4" secondAttribute="trailing" id="Jri-t9-G8Q"/>
+                            <constraint firstItem="zig-OP-auP" firstAttribute="top" secondItem="BkZ-Au-wH4" secondAttribute="bottom" constant="8" symbolic="YES" id="LEi-ov-MOA"/>
+                            <constraint firstItem="hDn-sF-H3c" firstAttribute="top" secondItem="Fgb-uS-MN9" secondAttribute="bottom" constant="8" symbolic="YES" id="RrM-rw-Whp"/>
+                            <constraint firstItem="Fgb-uS-MN9" firstAttribute="leading" secondItem="hDn-sF-H3c" secondAttribute="leading" id="T8e-Lx-UWb"/>
+                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="trailing" secondItem="7OP-Zf-TW9" secondAttribute="trailing" id="TaV-ib-s9P"/>
+                            <constraint firstItem="DZh-zA-rPu" firstAttribute="leading" secondItem="Fgb-uS-MN9" secondAttribute="leading" id="VhR-uz-aKV"/>
+                            <constraint firstItem="Fgb-uS-MN9" firstAttribute="trailing" secondItem="hDn-sF-H3c" secondAttribute="trailing" id="XqW-kX-ywr"/>
+                            <constraint firstItem="BkZ-Au-wH4" firstAttribute="trailing" secondItem="zig-OP-auP" secondAttribute="trailing" id="aX6-CA-K24"/>
+                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="leading" secondItem="xzk-NZ-cYR" secondAttribute="leadingMargin" id="adk-J0-RCF"/>
+                            <constraint firstAttribute="bottom" secondItem="k6I-sc-gy9" secondAttribute="bottom" id="cHh-8K-Cyo"/>
+                            <constraint firstItem="Fgb-uS-MN9" firstAttribute="top" secondItem="DZh-zA-rPu" secondAttribute="bottom" constant="8" symbolic="YES" id="fba-fU-gWC"/>
+                            <constraint firstItem="7OP-Zf-TW9" firstAttribute="leading" secondItem="DZh-zA-rPu" secondAttribute="leading" id="gVT-r4-wJK"/>
+                            <constraint firstItem="k6I-sc-gy9" firstAttribute="top" secondItem="Bgw-Fd-ddy" secondAttribute="top" id="hqq-sC-3C3"/>
+                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="top" secondItem="Bgw-Fd-ddy" secondAttribute="top" constant="74" id="mkr-AX-ks7"/>
+                            <constraint firstItem="Bgw-Fd-ddy" firstAttribute="bottom" secondItem="zig-OP-auP" secondAttribute="bottom" constant="86" id="o0e-Io-ETq"/>
+                            <constraint firstItem="Mz0-Sm-HKR" firstAttribute="leading" secondItem="7OP-Zf-TW9" secondAttribute="leading" id="x3F-Zf-I6K"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bgw-Fd-ddy"/>
                     </view>
@@ -123,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBa-Lc-lJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130.40000000000001" y="-56.221889055472268"/>
+            <point key="canvasLocation" x="-130.40000000000001" y="-56.896551724137936"/>
         </scene>
     </scenes>
     <resources>

@@ -17,6 +17,7 @@ class PairsListViewController: RootViewController, ObserverProtocol {
     var pair_keys: [String] = Array(pairsListData.keys)
     var pairkey_indexPath: [String : IndexPath] = [String : IndexPath]()
     var pair_saved_price: [String : Double] = [String : Double]()
+    var tickers: [String : Ticker] = [String : Ticker]()
     
     var presenter: PairsListPresentation!
     
@@ -96,7 +97,12 @@ extension PairsListViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let pairKey = pair_keys[indexPath.row]
-        presenter.didSelectPair(pairKey)
+        guard let ticker: Ticker = tickers[pairKey] else {
+            return
+        }
+        
+        print(ticker)
+        presenter.didSelectPair(ticker)
     }
 }
 
@@ -116,7 +122,7 @@ extension PairsListViewController {
         }
         
         let tickerId = ticker.tickerId
-        
+
         guard let path: IndexPath = pairkey_indexPath[tickerId] else {
             return
         }
@@ -124,6 +130,8 @@ extension PairsListViewController {
         guard let cell: PairListTableViewCell = pairsTableView.cellForRow(at: path) as? PairListTableViewCell else {
             return
         }
+        
+        tickers[tickerId] = ticker
 
         if cell.pairId == tickerId {
             

@@ -9,14 +9,15 @@
 import UIKit
 
 class PairDetailRouter: PairDetailWireframe {
-    static func assembleModule(_ pairId: String) -> UIViewController {
+    
+    static func assembleModule(_ ticker: Ticker) -> UIViewController {
         let view = R.storyboard.pairDetailStoryboard.pairDetailiViewController()
         let presenter = PairDetailPresenter()
         
         view?.presenter = presenter
         
         presenter.view = view
-        presenter.pairId = pairId
+        presenter.ticker = ticker
         
         return view!
     }

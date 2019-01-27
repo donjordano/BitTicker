@@ -11,9 +11,9 @@ import Foundation
 class PairDetailPresenter: PairDetailPresentation {
     var view: PairDetailView?
     var wireframe: PairDetailWireframe!
-    var pairId: String!
+    var ticker: Ticker!
     
     func viewDidLoad() {
-        view?.showDetails(forPair: pairId)
+        view?.showDetails(forTicker: ticker)
     }
 }

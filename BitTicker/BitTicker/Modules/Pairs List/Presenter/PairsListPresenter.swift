@@ -18,8 +18,8 @@ class PairsListPresenter: PairsListPresentation {
         
     }
     
-    func didSelectPair(_ pair: String) {
-        router.presentPairDetailView(forPairId: pair)
+    func didSelectPair(_ ticker: Ticker) {
+        router.presentPairDetailView(withTicker: ticker)
     }
     
     func didClickLogOutButton() {

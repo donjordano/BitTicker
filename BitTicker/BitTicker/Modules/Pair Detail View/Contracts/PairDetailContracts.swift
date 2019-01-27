@@ -10,7 +10,7 @@ import Foundation
 
 protocol PairDetailView {
     var presenter: PairDetailPresentation! { get set }
-    func showDetails(forPair pairId: String)
+    func showDetails(forTicker ticker: Ticker)
 }
 
 protocol PairDetailPresentation: class {
@@ -20,5 +20,5 @@ protocol PairDetailPresentation: class {
 }
 
 protocol PairDetailWireframe: class {
-    static func assembleModule(_ pairId: String ) -> UIViewController
+    static func assembleModule(_ ticker: Ticker ) -> UIViewController
 }
