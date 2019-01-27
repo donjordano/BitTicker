@@ -35,6 +35,8 @@
 		BC0F280621FC99ED008032D3 /* PairDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280521FC99ED008032D3 /* PairDetailRouter.swift */; };
 		BC0F280821FC9A03008032D3 /* PairDetailiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280721FC9A03008032D3 /* PairDetailiViewController.swift */; };
 		BC0F280A21FC9A14008032D3 /* PairDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0F280921FC9A14008032D3 /* PairDetailStoryboard.storyboard */; };
+		BC0F280C21FCC3E0008032D3 /* PairListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */; };
+		BC0F280E21FCC3EB008032D3 /* PairListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */; };
 		BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */; };
 		BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFB21FA0D9400A59813 /* Main.storyboard */; };
 		BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */; };
@@ -96,6 +98,8 @@
 		BC0F280521FC99ED008032D3 /* PairDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDetailRouter.swift; sourceTree = "<group>"; };
 		BC0F280721FC9A03008032D3 /* PairDetailiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairDetailiViewController.swift; sourceTree = "<group>"; };
 		BC0F280921FC9A14008032D3 /* PairDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairListTableViewCell.xib; sourceTree = "<group>"; };
+		BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListTableViewCell.swift; sourceTree = "<group>"; };
 		BCFAAFF421FA0D9400A59813 /* BitTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFAAFFC21FA0D9400A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -279,6 +283,8 @@
 			children = (
 				BC0F27F521FC9908008032D3 /* PairsListViewController.swift */,
 				BC0F27F721FC991B008032D3 /* PairsListStoryboard.storyboard */,
+				BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */,
+				BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -629,6 +635,7 @@
 				BC0F27C221FC4FCD008032D3 /* GoogleService-Info.plist in Resources */,
 				BC0F280A21FC9A14008032D3 /* PairDetailStoryboard.storyboard in Resources */,
 				BC0F27F821FC991B008032D3 /* PairsListStoryboard.storyboard in Resources */,
+				BC0F280C21FCC3E0008032D3 /* PairListTableViewCell.xib in Resources */,
 				BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */,
 				BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */,
 			);
@@ -765,6 +772,7 @@
 				BC0F280221FC99C6008032D3 /* PairDetailInteractor.swift in Sources */,
 				BC0F280821FC9A03008032D3 /* PairDetailiViewController.swift in Sources */,
 				BCFAB04921FA501B00A59813 /* PairIdData.swift in Sources */,
+				BC0F280E21FCC3EB008032D3 /* PairListTableViewCell.swift in Sources */,
 				BC0F27D321FC562A008032D3 /* LoginIneractor.swift in Sources */,
 				BCFAB02C21FA0E7900A59813 /* UIColor.swift in Sources */,
 				BC0F27DD21FC5AB3008032D3 /* RootRouter.swift in Sources */,

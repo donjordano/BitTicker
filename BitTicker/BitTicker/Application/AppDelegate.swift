@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         RootRouter().presentLoginScreen(in: window!)
-        
+
         /// Firebase config
         FirebaseApp.configure()
     
