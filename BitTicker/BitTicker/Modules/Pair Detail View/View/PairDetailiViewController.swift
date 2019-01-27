@@ -8,12 +8,18 @@
 
 import UIKit
 
-class  PairDetailiViewController: RootViewController {
-    
-    @IBOutlet weak var pairLabel: UILabel!
+class  PairDetailsViewController: RootViewController {
     
     var presenter: PairDetailPresentation!
     
+    @IBOutlet weak var lastPriceLabel: UILabel!
+    @IBOutlet weak var pairLabel: UILabel!
+    @IBOutlet weak var lowestAskLabel: UILabel!
+    @IBOutlet weak var highestAskLabel: UILabel!
+    @IBOutlet weak var lowestLastLabel: UILabel!
+    @IBOutlet weak var highestLastLabel: UILabel!
+    @IBOutlet weak var percentLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
@@ -24,9 +30,9 @@ class  PairDetailiViewController: RootViewController {
     }
 }
 
-extension PairDetailiViewController: PairDetailView {
+extension PairDetailsViewController: PairDetailView {
     func showDetails(forPair pairId: String) {
-        pairLabel.text = pairsListData[pairId]
+        pairLabel.text = pairsListData[pairId]?.replaceUnderScore()
     }
 
 }
