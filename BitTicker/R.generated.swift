@@ -43,7 +43,33 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 3 storyboards.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `PairListTableViewCell`.
+    static let pairListTableViewCell = _R.nib._PairListTableViewCell()
+    
+    /// `UINib(name: "PairListTableViewCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.pairListTableViewCell) instead")
+    static func pairListTableViewCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.pairListTableViewCell)
+    }
+    
+    static func pairListTableViewCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PairListTableViewCell? {
+      return R.nib.pairListTableViewCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PairListTableViewCell
+    }
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `PairListTableViewCell`.
+    static let pairListTableViewCell: Rswift.ReuseIdentifier<PairListTableViewCell> = Rswift.ReuseIdentifier(identifier: "PairListTableViewCell")
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
@@ -51,6 +77,10 @@ struct R: Rswift.Validatable {
     static let loginStoryboard = _R.storyboard.loginStoryboard()
     /// Storyboard `Main`.
     static let main = _R.storyboard.main()
+    /// Storyboard `PairDetailStoryboard`.
+    static let pairDetailStoryboard = _R.storyboard.pairDetailStoryboard()
+    /// Storyboard `PairsListStoryboard`.
+    static let pairsListStoryboard = _R.storyboard.pairsListStoryboard()
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
@@ -65,6 +95,16 @@ struct R: Rswift.Validatable {
     /// `UIStoryboard(name: "Main", bundle: ...)`
     static func main(_: Void = ()) -> UIKit.UIStoryboard {
       return UIKit.UIStoryboard(resource: R.storyboard.main)
+    }
+    
+    /// `UIStoryboard(name: "PairDetailStoryboard", bundle: ...)`
+    static func pairDetailStoryboard(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.pairDetailStoryboard)
+    }
+    
+    /// `UIStoryboard(name: "PairsListStoryboard", bundle: ...)`
+    static func pairsListStoryboard(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.pairsListStoryboard)
     }
     
     fileprivate init() {}
@@ -88,11 +128,31 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
   }
   
+  struct nib {
+    struct _PairListTableViewCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = PairListTableViewCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "PairListTableViewCell"
+      let name = "PairListTableViewCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> PairListTableViewCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? PairListTableViewCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    fileprivate init() {}
+  }
+  
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try launchScreen.validate()
       try loginStoryboard.validate()
       try main.validate()
+      try pairDetailStoryboard.validate()
+      try pairsListStoryboard.validate()
     }
     
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -136,6 +196,36 @@ struct _R: Rswift.Validatable {
       static func validate() throws {
         if #available(iOS 11.0, *) {
         }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct pairDetailStoryboard: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "PairDetailStoryboard"
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+      }
+      
+      fileprivate init() {}
+    }
+    
+    struct pairsListStoryboard: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let bundle = R.hostingBundle
+      let name = "PairsListStoryboard"
+      let pairsListViewController = StoryboardViewControllerResource<PairsListViewController>(identifier: "PairsListViewController")
+      
+      func pairsListViewController(_: Void = ()) -> PairsListViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: pairsListViewController)
+      }
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.pairsListStoryboard().pairsListViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'pairsListViewController' could not be loaded from storyboard 'PairsListStoryboard' as 'PairsListViewController'.") }
       }
       
       fileprivate init() {}
