@@ -9,10 +9,10 @@
 import Foundation
 
 class RootRouter: RootWireframe {
-    
+
     func presentLoginScreen(in window: UIWindow) {
         window.makeKeyAndVisible()
-        window.rootViewController = LogiRouter.assemleModule()
+        window.rootViewController = LogiRouter.assembleModule()
     }
     
 }
