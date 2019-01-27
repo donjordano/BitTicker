@@ -9,7 +9,11 @@
 import Foundation
 import Starscream
 
-class BitPoloniexService: NSObject {
+class BitPoloniexService: NSObject, ObservedProtocol {
+    
+    let statusKey: StatusKey = StatusKey.didReceiveDataKey
+    let notification: Notification.Name = .didReceiveDataKeyName
+    
     
     /// Singleton
     static let sharedInstance = BitPoloniexService()
@@ -56,17 +60,28 @@ class BitPoloniexService: NSObject {
                 
                 let dataArray = beginning.split(separator: ",")
                 
-                let pairId = String(dataArray[0])
-                let lastTradePrice = String(dataArray[1])
-                let lowestAsk = String(dataArray[1])
-                let higestAsk = String(dataArray[1])
-                let percentChange24 = String(dataArray[1])
+                let tickerId  = String(dataArray[0])
+                let lastPrice = String(dataArray[1])
+                let lowestAsk = String(dataArray[2])
+                let higestAsk = String(dataArray[3])
+                let percent24 = String(dataArray[4])
+                let isFrozen = String(dataArray[7]).toBool()
+                let higestTrade24 = String(dataArray[8])
+                let lowestTrade24 = String(dataArray[9])
                 
-                guard let pair = pairsListData[pairId] else {
-                    return
-                }
                 
-                //print("pair \(pair) price: \(lastTradePrice) lowAsk: \(lowestAsk) higestAsk: \(higestAsk) % : \(percentChange24)")
+                let ticker = Ticker(tickerId: tickerId,
+                                    lastPrice: lastPrice,
+                                    lowestAsk: lowestAsk,
+                                    higestAsk: higestAsk,
+                                    percent24: percent24,
+                                    higestTrade24: higestTrade24,
+                                    lowestTrade24: lowestTrade24,
+                                    isFrozen: isFrozen
+                                    )
+                
+                
+                self.notifyObservers(about: ticker)
             }
             
         }
