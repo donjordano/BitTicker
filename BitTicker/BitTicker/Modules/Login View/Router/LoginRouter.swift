@@ -12,11 +12,7 @@ class LogiRouter: LoginWireframe {
     
     weak var viewController: UIViewController?
     
-    func presentPairsView() {
-        
-    }
-    
-    static func assemleModule() -> UIViewController {
+    static func assembleModule() -> UIViewController {
         let view = R.storyboard.loginStoryboard.loginViewController()
         let presenter = LoginPresenter()
         let interactor = LoginInteractor()
@@ -36,7 +32,8 @@ class LogiRouter: LoginWireframe {
     }
     
     func presentPairsList() {
-        print("Present Pairs list")
+        let pairsListViewController = PairsListRouter.assembleModule()
+        viewController?.navigationController?.pushViewController(pairsListViewController, animated: true)
     }
 
 }

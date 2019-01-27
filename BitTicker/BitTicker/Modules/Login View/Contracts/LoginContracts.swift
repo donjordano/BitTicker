@@ -23,7 +23,6 @@ protocol LoginPresentation: class {
     var interactor: LoginInteractorInput? { get set }
     var router: LoginWireframe! {  get set }
     
-    func viewDidLoad()
     func didClickLoginButton(withEmail email: String, andPassword password: String)
     func showPairsList()
 }
@@ -43,6 +42,7 @@ protocol LoginInteractorOutput: class {
 protocol LoginWireframe: class {
     var viewController: UIViewController? { get set }
     
+    static func assembleModule() -> UIViewController
     func presentPairsList()
-    static func assemleModule() -> UIViewController
+    
 }

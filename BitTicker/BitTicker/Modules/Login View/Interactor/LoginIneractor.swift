@@ -41,7 +41,10 @@ class LoginInteractor: LoginInteractorInput {
                 return
             }
             
-            //guard let user = user else { return }
+            //guard let user = user else { return } 
+            
+            // If login is successful subscribe for WS
+            BitPoloniexService.sharedInstance.connect()
             
             self.presenter?.loginSucceed()
         }

@@ -20,9 +20,6 @@ class LoginPresenter: LoginPresentation {
     // Reference to the Router
     var router: LoginWireframe!
     
-    func viewDidLoad() {
-    }
-    
     func didClickLoginButton(withEmail email: String, andPassword password: String) {
         view?.showLoaderView(show: true)
         interactor?.loginUser(email: email, password: password)
