@@ -6,7 +6,7 @@
 //  Copyright © 2019 Ivan Yordanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class LoginViewController: RootViewController {
     
@@ -17,7 +17,7 @@ class LoginViewController: RootViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.viewDidLoad()
+        navigationItem.title = "BitTicker"
     }
     
     @IBAction func loginButtonClicked(_ sender: Any) {
@@ -30,6 +30,12 @@ class LoginViewController: RootViewController {
         } else {
             presenter.didClickLoginButton(withEmail: email, andPassword: password)
         }
+    }
+    
+    #warning("TODO: Delete asap") // Only for test purposes and the demo
+    @IBAction func fillTestCredentials(_ sender: Any) {
+        emailTextField.text = "test@test.com"
+        passwordTextField.text = "12341234"
     }
 }
 
