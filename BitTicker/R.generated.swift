@@ -30,10 +30,12 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.image` struct is generated, and contains static references to 3 images.
+  /// This `R.image` struct is generated, and contains static references to 4 images.
   struct image {
     /// Image `Default-568h`.
     static let default568h = Rswift.ImageResource(bundle: R.hostingBundle, name: "Default-568h")
+    /// Image `details_screen`.
+    static let details_screen = Rswift.ImageResource(bundle: R.hostingBundle, name: "details_screen")
     /// Image `green_arrow`.
     static let green_arrow = Rswift.ImageResource(bundle: R.hostingBundle, name: "green_arrow")
     /// Image `red_arrow`.
@@ -42,6 +44,11 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "Default-568h", bundle: ..., traitCollection: ...)`
     static func default568h(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.default568h, compatibleWith: traitCollection)
+    }
+    
+    /// `UIImage(named: "details_screen", bundle: ..., traitCollection: ...)`
+    static func details_screen(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.details_screen, compatibleWith: traitCollection)
     }
     
     /// `UIImage(named: "green_arrow", bundle: ..., traitCollection: ...)`
@@ -194,6 +201,7 @@ struct _R: Rswift.Validatable {
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "Default-568h", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'Default-568h' is used in storyboard 'LoginStoryboard', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
         }
         if _R.storyboard.loginStoryboard().loginViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'loginViewController' could not be loaded from storyboard 'LoginStoryboard' as 'BitTicker.LoginViewController'.") }
@@ -219,16 +227,17 @@ struct _R: Rswift.Validatable {
     struct pairDetailStoryboard: Rswift.StoryboardResourceType, Rswift.Validatable {
       let bundle = R.hostingBundle
       let name = "PairDetailStoryboard"
-      let pairDetailiViewController = StoryboardViewControllerResource<PairDetailiViewController>(identifier: "PairDetailiViewController")
+      let pairDetailiViewController = StoryboardViewControllerResource<PairDetailsViewController>(identifier: "PairDetailiViewController")
       
-      func pairDetailiViewController(_: Void = ()) -> PairDetailiViewController? {
+      func pairDetailiViewController(_: Void = ()) -> PairDetailsViewController? {
         return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: pairDetailiViewController)
       }
       
       static func validate() throws {
+        if UIKit.UIImage(named: "details_screen", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'details_screen' is used in storyboard 'PairDetailStoryboard', but couldn't be loaded.") }
         if #available(iOS 11.0, *) {
         }
-        if _R.storyboard.pairDetailStoryboard().pairDetailiViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'pairDetailiViewController' could not be loaded from storyboard 'PairDetailStoryboard' as 'PairDetailiViewController'.") }
+        if _R.storyboard.pairDetailStoryboard().pairDetailiViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'pairDetailiViewController' could not be loaded from storyboard 'PairDetailStoryboard' as 'PairDetailsViewController'.") }
       }
       
       fileprivate init() {}
