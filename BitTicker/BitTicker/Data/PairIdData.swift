@@ -7,7 +7,7 @@
 //
 
 import Foundation
-    let pairs =
+    let pairsListData =
         [   "7": "BTC_BCN",
            "14": "BTC_BTS",
            "15": "BTC_BURST",
