@@ -37,9 +37,81 @@ Basically, there is a protocol/contracts file for each scene in the app. This fi
 
 Another important point is because using of protocols it's really easy to define mocks views/presenters/interactors/routers for testing.
 
+```swift
+// View / Presenter
+protocol LoginView: class {
+    var presenter: LoginPresentation! { get set }
+    
+    func showLogingView()
+    func showTickerView()
+    func showAlert(title: String, message: String)
+    func showLoaderView(show: Bool)
+}
+
+protocol LoginPresentation: class {
+    var view: LoginView? { get set }
+    var interactor: LoginInteractorInput? { get set }
+    var router: LoginWireframe! {  get set }
+    
+    func didClickLoginButton(withEmail email: String, andPassword password: String)
+    func didClickRegisterButton(withEmail email: String, andPassword password: String)
+    func showPairsList()
+}
+
+// Presenter to interactor
+protocol LoginInteractorInput: class {
+    var presenter: LoginInteractorOutput? {get set}
+    func loginUser(email: String, password: String)
+    func registerUser(email: String, password: String)
+}
+
+// Interactor to presenter
+protocol LoginInteractorOutput: class {
+    func succeed()
+    func failed(error: String)
+}
+
+// Router
+protocol LoginWireframe: class {
+    var viewController: UIViewController? { get set }
+    
+    static func assembleModule() -> UIViewController
+    func presentPairsList()
+    
+}
+
+```
+
+## Data models
+Data model for this project is very simple. It represent single ticker data structure.
+
+```swift
+// Entity
+struct Ticker {
+    var tickerId: String
+    var lastPrice: Double
+    var lowestAsk: Double
+    var higestAsk: Double
+    var percent24: Double
+    var higestTrade24: Double
+    var lowestTrade24: Double
+    var isFrozen: Bool
+}
+```
+
 ## Where the data is coming from?
 
 The project is using **Poloniex** WebSocket, documentation can be found [here](https://docs.poloniex.com/#websocket-api).
+
+## Managers
+
+### ReachabilityManager
+
+Used to manage the reachability. In this case I would like to notify a little issue related with the simulator. *It seems Xcode has an issue with the simulator because if you try to turn off the wifi and turning on again, the observer for the state change is not triggering. It's working 100% fine in a real device*
+
+## How it looks like?
+
+## Support && contact
 
 ### Email
 

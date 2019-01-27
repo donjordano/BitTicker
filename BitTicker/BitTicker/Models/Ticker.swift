@@ -17,5 +17,4 @@ struct Ticker {
     var higestTrade24: Double
     var lowestTrade24: Double
     var isFrozen: Bool
-    
 }
