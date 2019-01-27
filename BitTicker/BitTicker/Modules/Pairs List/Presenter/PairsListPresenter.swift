@@ -9,13 +9,17 @@
 import Foundation
 
 class PairsListPresenter: PairsListPresentation {
-    
+
     var view: PairsListView?
     var interactor: PairsListInteractorInput?
     var router: PairsListWireframe!
     
     func viewDidLoad() {
         
+    }
+    
+    func didSelectPair(_ pair: String) {
+        router.presentPairDetailView(forPairId: pair)
     }
     
     func didClickLogOutButton() {

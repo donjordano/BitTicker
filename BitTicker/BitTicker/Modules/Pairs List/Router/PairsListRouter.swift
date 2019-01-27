@@ -6,9 +6,10 @@
 //  Copyright © 2019 Ivan Yordanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class PairsListRouter: PairsListWireframe {
+
     var viewController: UIViewController?
     
     static func assembleModule() -> UIViewController {
@@ -30,10 +31,11 @@ class PairsListRouter: PairsListWireframe {
         return view!
     }
     
-    func presentPairDetailView() {
-        
+    func presentPairDetailView(forPairId pairId: String) {
+        let pairDetailViewController = PairDetailRouter.assembleModule(pairId)
+        viewController?.navigationController?.pushViewController(pairDetailViewController, animated: true)
     }
-    
+
     func dissmisPairListViewOnLogOut() {
         viewController?.navigationController?.popViewController(animated: true)
     }

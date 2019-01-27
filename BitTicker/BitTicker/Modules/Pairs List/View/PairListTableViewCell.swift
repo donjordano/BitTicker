@@ -13,6 +13,8 @@ class PairListTableViewCell: UITableViewCell {
     @IBOutlet weak var pairsLabel: UILabel!
     @IBOutlet weak var percentLabel: UILabel!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
+    @IBOutlet weak var arrowIndicatorImageVIew: UIImageView!
+    @IBOutlet weak var deteilsLabel: UILabel!
     
     var pairId: String = ""
     
@@ -27,6 +29,18 @@ class PairListTableViewCell: UITableViewCell {
     func update(price: String) {
         percentLabel.text = price
         indicator.stopAnimating()
+    }
+    
+    func updateArrowIndicator(_ isUp: Bool) {
+        if isUp {
+            arrowIndicatorImageVIew.image = R.image.green_arrow()
+        } else {
+            arrowIndicatorImageVIew.image = R.image.red_arrow()
+        }
+    }
+    
+    func updateDetails(_ details: String) {
+        deteilsLabel.text = details
     }
     
 }

@@ -20,6 +20,7 @@ protocol PairsListPresentation {
     var router: PairsListWireframe! { get set }
     
     func didClickLogOutButton()
+    func didSelectPair(_ pair: String)
 }
 
 // Presenter to Interactor
@@ -39,6 +40,6 @@ protocol PairsListWireframe: class {
     var viewController: UIViewController? { get set }
     
     static func assembleModule() -> UIViewController
-    func presentPairDetailView()
+    func presentPairDetailView(forPairId pairId: String)
     func dissmisPairListViewOnLogOut()
 }

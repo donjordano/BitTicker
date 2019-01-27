@@ -16,6 +16,7 @@ class PairsListViewController: RootViewController, ObserverProtocol {
     
     var pair_keys: [String] = Array(pairsListData.keys)
     var pairkey_indexPath: [String : IndexPath] = [String : IndexPath]()
+    var pair_saved_price: [String : Double] = [String : Double]()
     
     var presenter: PairsListPresentation!
     
@@ -48,6 +49,7 @@ class PairsListViewController: RootViewController, ObserverProtocol {
         
         pairsTableView.delegate = self
         pairsTableView.dataSource = self
+        pairsTableView.separatorColor = .white
         pairsTableView.register(UINib(nibName: "PairListTableViewCell", bundle: nil), forCellReuseIdentifier: "PairListTableViewCell")
         
         pairsTableView.reloadData()
@@ -91,6 +93,11 @@ extension PairsListViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let pairKey = pair_keys[indexPath.row]
+        presenter.didSelectPair(pairKey)
+    }
 }
 
 /// handle the notification from the observed and update data
@@ -119,9 +126,28 @@ extension PairsListViewController {
         }
 
         if cell.pairId == tickerId {
-            /// update cell
+            
+            /// update last price
             let priceString = NSString(format: "%.4f", ticker.lastPrice)
             cell.update(price: priceString as String)
+            
+            /// update last 24h details
+            let detailsString = NSString(format: "Lowest: %.2f   Higest: %.2f   Percent: %.2f %%", ticker.lowestTrade24, ticker.higestTrade24, ticker.percent24)
+            cell.updateDetails(detailsString as String)
+            
+            /// Update red/green arrows
+            if pair_saved_price[tickerId] == nil {
+                pair_saved_price[tickerId] = ticker.lastPrice
+            } else {
+                if ticker.lastPrice < pair_saved_price[tickerId]! {
+                    cell.updateArrowIndicator(false)
+                } else {
+                    cell.updateArrowIndicator(true)
+                }
+            }
+            
+            // Save last price
+            pair_saved_price[tickerId] = ticker.lastPrice
         }
     }
 }
