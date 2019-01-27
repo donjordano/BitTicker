@@ -24,6 +24,7 @@ protocol LoginPresentation: class {
     var router: LoginWireframe! {  get set }
     
     func didClickLoginButton(withEmail email: String, andPassword password: String)
+    func didClickRegisterButton(withEmail email: String, andPassword password: String)
     func showPairsList()
 }
 
@@ -31,12 +32,13 @@ protocol LoginPresentation: class {
 protocol LoginInteractorInput: class {
     var presenter: LoginInteractorOutput? {get set}
     func loginUser(email: String, password: String)
+    func registerUser(email: String, password: String)
 }
 
 // Interactor to presenter
 protocol LoginInteractorOutput: class {
-    func loginSucceed()
-    func loginFailed(error: String)
+    func succeed()
+    func failed(error: String)
 }
 
 protocol LoginWireframe: class {

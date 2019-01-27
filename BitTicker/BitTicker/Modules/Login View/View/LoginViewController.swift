@@ -20,15 +20,25 @@ class LoginViewController: RootViewController {
         navigationItem.title = "BitTicker"
     }
     
+    
+    //MARK: IBActions
     @IBAction func loginButtonClicked(_ sender: Any) {
         guard let email = emailTextField.text, let password = passwordTextField.text else {
             return
         }
         
-        if((email.isEmpty ) || (password.isEmpty)) {
-            showAlertWith(title: "Error", message: "Email and Password are required", actionTitle: "OK")
-        } else {
+        if (textFieldsAreValid(email, password)) {
             presenter.didClickLoginButton(withEmail: email, andPassword: password)
+        }
+    }
+    
+    @IBAction func registerButtonClicked(_ sender: Any) {
+        guard let email = emailTextField.text, let password = passwordTextField.text else {
+            return
+        }
+        
+        if (textFieldsAreValid(email, password)) {
+            presenter.didClickRegisterButton(withEmail: email, andPassword: password)
         }
     }
     
@@ -36,6 +46,17 @@ class LoginViewController: RootViewController {
     @IBAction func fillTestCredentials(_ sender: Any) {
         emailTextField.text = "test@test.com"
         passwordTextField.text = "12341234"
+    }
+    
+    //MARK: Helper methods
+    private func textFieldsAreValid(_ email: String, _ password: String) -> Bool {
+        
+        if((email.isEmpty ) || (password.isEmpty)) {
+            showAlertWith(title: "Error", message: "Email and Password are required", actionTitle: "OK")
+            return false
+        }
+        
+        return true
     }
 }
 
@@ -55,6 +76,6 @@ extension LoginViewController: LoginView {
     }
     
     func showLoaderView(show: Bool) {
-        showLoader(show, status: "Sigin...")
+        showLoader(show, status: "Loading...")
     }
 }
