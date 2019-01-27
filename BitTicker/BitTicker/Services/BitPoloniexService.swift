@@ -10,6 +10,8 @@ import Foundation
 import Starscream
 
 class BitPoloniexService: NSObject {
+    
+    /// Singleton
     static let sharedInstance = BitPoloniexService()
     var socket: WebSocket?
     
@@ -18,22 +20,33 @@ class BitPoloniexService: NSObject {
         socket = WebSocket(url: URL(string: "wss://api2.poloniex.com")!)
     }
     
+    /// WS connect and subscribe
     func connect() {
-        //websocketDidConnect
-        socket?.onConnect = {
-            print("websocket is connected")
-            self.subscribe()
-        }
+        socket?.connect()
         
-        //websocketDidDisconnect
+        /// onConnect
+        socket?.onConnect = {
+            print("websocket is connected let's subscribe")
+            self.subscribe()
+            self.websocketDidReceiveMessage()
+        }
+    }
+
+    /// WS disconnect
+    func disconnect() {
+        socket?.disconnect()
+        
+        /// websocketDidDisconnect
         socket?.onDisconnect = { (error: Error?) in
             print("websocket is disconnected: \(String(describing: error?.localizedDescription))")
         }
+    }
+    
+    /// On receive data
+    func websocketDidReceiveMessage() {
         
-        //websocketDidReceiveMessage
+        /// websocketDidReceiveMessage
         socket?.onText = { (text: String) in
-            
-            
             if text.count > 12 {
                 let index = text.index(text.startIndex, offsetBy: 12)
                 var beginning = text[index...]
@@ -49,23 +62,30 @@ class BitPoloniexService: NSObject {
                 let higestAsk = String(dataArray[1])
                 let percentChange24 = String(dataArray[1])
                 
-                guard let pair = pairs[pairId] else {
+                guard let pair = pairsListData[pairId] else {
                     return
                 }
                 
-                print("pair \(pair) price: \(lastTradePrice) lowAsk: \(lowestAsk) higestAsk: \(higestAsk) % : \(percentChange24)")
+                //print("pair \(pair) price: \(lastTradePrice) lowAsk: \(lowestAsk) higestAsk: \(higestAsk) % : \(percentChange24)")
             }
             
         }
-        
-        socket?.connect()
     }
     
+    /// Subscribe
     func subscribe() {
         socket?.write(string: "{\"command\": \"subscribe\", \"channel\": 1002}")
     }
     
-    func unsubscrive() {
+    
+    /// Unsubscribe
+    func unsubscribe() {
         socket?.write(string: "{\"command\": \"unsubscribe\", \"channel\": 1002}")
+    }
+    
+    /// Unsubscribe and disconnect
+    func unsubscribeAndDisconnect() {
+        unsubscribe()
+        disconnect()
     }
 }
