@@ -7,3 +7,34 @@
 //
 
 import Foundation
+
+class PairsListPresenter: PairsListPresentation {
+    
+    var view: PairsListView?
+    var interactor: PairsListInteractorInput?
+    var router: PairsListWireframe!
+    
+    func viewDidLoad() {
+        
+    }
+    
+    func didClickLogOutButton() {
+        interactor?.logOutUser()
+    }
+    
+    
+}
+
+extension PairsListPresenter: PairsListInteractorOutput {
+    func signOutSuccedd() {
+         print("SignOut success")
+        router?.dissmisPairListViewOnLogOut()
+    }
+    
+    func signOutFailed(message: String) {
+        print("SigOunt error: \(message)")
+        view?.showAlert(title: "SignOut Error", message: message)
+    }
+    
+    
+}

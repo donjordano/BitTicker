@@ -5,36 +5,39 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Pairs List View Controller-->
-        <scene sceneID="qNm-MZ-Z4o">
+        <scene sceneID="cu5-kZ-fl8">
             <objects>
-                <tableViewController storyboardIdentifier="PairsListViewController" id="NnJ-b5-5Mk" customClass="PairsListViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gET-A5-X32">
+                <viewController storyboardIdentifier="PairsListViewController" id="Ogm-Rk-84V" customClass="PairsListViewController" customModule="BitTicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qlj-pG-2Ur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="16" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="gil-QI-QOZ">
+                                <rect key="frame" x="0.0" y="20" width="391" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="EKy-VH-ggP">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EKy-VH-ggP" id="mgd-Tj-RzH">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="NnJ-b5-5Mk" id="rpI-QY-pf7"/>
-                            <outlet property="delegate" destination="NnJ-b5-5Mk" id="8Yg-ab-VFn"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dB7-3N-B8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="gil-QI-QOZ" firstAttribute="bottom" secondItem="IaV-QO-AM6" secondAttribute="bottom" id="L2h-5f-JF0"/>
+                            <constraint firstItem="gil-QI-QOZ" firstAttribute="trailing" secondItem="IaV-QO-AM6" secondAttribute="trailing" constant="16" id="W3G-Eb-UPf"/>
+                            <constraint firstItem="gil-QI-QOZ" firstAttribute="leading" secondItem="IaV-QO-AM6" secondAttribute="leading" id="Zpc-Cu-XdJ"/>
+                            <constraint firstItem="gil-QI-QOZ" firstAttribute="top" secondItem="IaV-QO-AM6" secondAttribute="top" id="j6t-OA-8mQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IaV-QO-AM6"/>
+                    </view>
+                    <connections>
+                        <outlet property="pairsTableView" destination="gil-QI-QOZ" id="gSg-eX-Drd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yqs-ID-6ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-222" y="160"/>
+            <point key="canvasLocation" x="69.599999999999994" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>
