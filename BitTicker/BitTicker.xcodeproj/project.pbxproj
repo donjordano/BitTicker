@@ -37,6 +37,7 @@
 		BC0F280A21FC9A14008032D3 /* PairDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0F280921FC9A14008032D3 /* PairDetailStoryboard.storyboard */; };
 		BC0F280C21FCC3E0008032D3 /* PairListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */; };
 		BC0F280E21FCC3EB008032D3 /* PairListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */; };
+		BC0F281221FD9B98008032D3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F281121FD9B98008032D3 /* Observable.swift */; };
 		BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */; };
 		BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFB21FA0D9400A59813 /* Main.storyboard */; };
 		BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */; };
@@ -100,6 +101,7 @@
 		BC0F280921FC9A14008032D3 /* PairDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PairDetailStoryboard.storyboard; sourceTree = "<group>"; };
 		BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairListTableViewCell.xib; sourceTree = "<group>"; };
 		BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListTableViewCell.swift; sourceTree = "<group>"; };
+		BC0F281121FD9B98008032D3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		BCFAAFF421FA0D9400A59813 /* BitTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFAAFFC21FA0D9400A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		BC0F27B821FC4BB3008032D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BCFAB04721FA4FD600A59813 /* Data */,
 				BC0F27BB21FC4C5D008032D3 /* Ticker.swift */,
 			);
 			path = Models;
@@ -186,7 +189,8 @@
 		BC0F27BA21FC4BE4008032D3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				BC0F27BD21FC4D57008032D3 /* BitPoloniexService.swift */,
+				BC0F281021FD9B81008032D3 /* Observable */,
+				BC0F280F21FD9B77008032D3 /* Ploniex */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -362,6 +366,22 @@
 			path = Contracts;
 			sourceTree = "<group>";
 		};
+		BC0F280F21FD9B77008032D3 /* Ploniex */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F27BD21FC4D57008032D3 /* BitPoloniexService.swift */,
+			);
+			path = Ploniex;
+			sourceTree = "<group>";
+		};
+		BC0F281021FD9B81008032D3 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F281121FD9B98008032D3 /* Observable.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
 		BCFAAFEB21FA0D9400A59813 = {
 			isa = PBXGroup;
 			children = (
@@ -387,11 +407,10 @@
 			children = (
 				BC0F27B521FC4B2F008032D3 /* Application */,
 				BC0F27B921FC4BBE008032D3 /* Modules */,
+				BC0F27B821FC4BB3008032D3 /* Models */,
+				BC0F27BA21FC4BE4008032D3 /* Services */,
 				BCFAB01921FA0E0900A59813 /* Resources */,
 				BCFAB01821FA0DFA00A59813 /* Extensions */,
-				BC0F27B821FC4BB3008032D3 /* Models */,
-				BCFAB04721FA4FD600A59813 /* Data */,
-				BC0F27BA21FC4BE4008032D3 /* Services */,
 				BCFAB01A21FA0E1600A59813 /* Network */,
 				BCFAB01B21FA0E2000A59813 /* Managers */,
 				BCFAB01721FA0DDB00A59813 /* Utils */,
@@ -757,6 +776,7 @@
 				BC0F27EE21FC98B5008032D3 /* PairsListContracts.swift in Sources */,
 				BC0F27E221FC6385008032D3 /* R.generated.swift in Sources */,
 				BCFAB03021FA0E7900A59813 /* UIView.swift in Sources */,
+				BC0F281221FD9B98008032D3 /* Observable.swift in Sources */,
 				BC0F27D921FC567F008032D3 /* LoginViewController.swift in Sources */,
 				BC0F27E721FC9762008032D3 /* Reachability.m in Sources */,
 				BC0F27F221FC98E9008032D3 /* PairsListPresenter.swift in Sources */,
@@ -953,6 +973,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SWF6VNBLT;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BitTicker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -975,6 +996,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SWF6VNBLT;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = BitTicker/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
