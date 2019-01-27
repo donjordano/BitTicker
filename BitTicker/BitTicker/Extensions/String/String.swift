@@ -76,3 +76,9 @@ public extension String {
         }
     }
 }
+
+public extension String {
+    func replaceUnderScore() -> String {
+        return self.replacingOccurrences(of: "_", with: " - ")
+    }
+}
