@@ -12,7 +12,7 @@ struct Ticker {
     var tickerId: String
     var lastPrice: Double
     var lowestAsk: Double
-    var higestAsk: Double
+    var highestAsk: Double
     var percent24: Double
     var higestTrade24: Double
     var lowestTrade24: Double

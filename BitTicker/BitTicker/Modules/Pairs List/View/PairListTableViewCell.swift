@@ -19,7 +19,7 @@ class PairListTableViewCell: UITableViewCell {
     var pairId: String = ""
     
     func setup(_ pairString: String) {
-        let pairLabelText = pairString.replacingOccurrences(of: "_", with: " - ")
+        let pairLabelText = pairString.replaceUnderScore()
         pairsLabel.text = pairLabelText
         if (percentLabel.text?.isEmpty)! {
             indicator.startAnimating()
@@ -28,10 +28,12 @@ class PairListTableViewCell: UITableViewCell {
     
     func update(price: String) {
         percentLabel.text = price
-        indicator.stopAnimating()
     }
     
     func updateArrowIndicator(_ isUp: Bool) {
+        /// Hide indicator when arrows are shown
+        indicator.stopAnimating()
+        
         if isUp {
             arrowIndicatorImageVIew.image = R.image.green_arrow()
         } else {

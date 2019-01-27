@@ -128,7 +128,7 @@ extension PairsListViewController {
         if cell.pairId == tickerId {
             
             /// update last price
-            let priceString = NSString(format: "%.4f", ticker.lastPrice)
+            let priceString = NSString(format: "%.6f", ticker.lastPrice)
             cell.update(price: priceString as String)
             
             /// update last 24h details

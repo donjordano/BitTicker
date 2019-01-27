@@ -73,7 +73,7 @@ class BitPoloniexService: NSObject, ObservedProtocol {
                 let ticker = Ticker(tickerId: tickerId,
                                     lastPrice: lastPrice!,
                                     lowestAsk: lowestAsk!,
-                                    higestAsk: higestAsk!,
+                                    highestAsk: higestAsk!,
                                     percent24: percent24!,
                                     higestTrade24: higestTrade24!,
                                     lowestTrade24: lowestTrade24!,

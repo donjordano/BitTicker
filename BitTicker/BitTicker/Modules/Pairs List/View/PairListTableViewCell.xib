@@ -17,23 +17,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX4-LK-8Db">
-                        <rect key="frame" x="164" y="11" width="140" height="44"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldo-Fm-7My">
+                        <rect key="frame" x="16" y="11" width="140" height="47"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="140" id="yhD-jm-ZQX"/>
+                            <constraint firstAttribute="width" constant="140" id="pY3-yb-RVN"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
-                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="textColor" red="0.89205266497461932" green="0.89205266497461932" blue="0.89205266497461932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Wix-CX-kS1">
-                        <rect key="frame" x="275" y="23" width="20" height="20"/>
-                    </activityIndicatorView>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32g-dC-aWi">
-                        <rect key="frame" x="312" y="11" width="40" height="42"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX4-LK-8Db">
+                        <rect key="frame" x="164" y="14.5" width="140" height="43"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="40" id="DCQ-gn-IlZ"/>
+                            <constraint firstAttribute="width" constant="140" id="Xzr-Ra-281"/>
                         </constraints>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="18"/>
+                        <color key="textColor" red="0.89205266497461932" green="0.89205266497461932" blue="0.89205266497461932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32g-dC-aWi">
+                        <rect key="frame" x="312" y="14.5" width="40" height="41.5"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDM-au-3G9">
                         <rect key="frame" x="360" y="0.0" width="15" height="87.5"/>
@@ -41,44 +44,38 @@
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDf-6A-lsN">
-                        <rect key="frame" x="16" y="62" width="336" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="22" id="tKs-96-5yg"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
-                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <rect key="frame" x="16" y="65" width="336" height="19"/>
+                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="15"/>
+                        <color key="textColor" red="0.89205266497461932" green="0.89205266497461932" blue="0.89205266497461932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldo-Fm-7My">
-                        <rect key="frame" x="16" y="11" width="140" height="44"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="140" id="B1C-id-8kp"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
-                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Wix-CX-kS1">
+                        <rect key="frame" x="322" y="26" width="20" height="20"/>
+                        <color key="color" red="0.27479076390000001" green="0.5571715236" blue="0.89757764340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </activityIndicatorView>
                 </subviews>
-                <color key="backgroundColor" red="0.93715304136276245" green="0.93731355667114258" blue="0.93714290857315063" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" red="0.040411679165015812" green="0.037132804787761618" blue="0.17670946552385791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="32g-dC-aWi" secondAttribute="bottom" constant="24" id="AIz-He-zs1"/>
-                    <constraint firstItem="ldo-Fm-7My" firstAttribute="leading" secondItem="U3D-BB-ThS" secondAttribute="leadingMargin" id="EJP-1I-5DA"/>
-                    <constraint firstItem="tDM-au-3G9" firstAttribute="leading" secondItem="xDf-6A-lsN" secondAttribute="trailing" constant="8" id="EiK-E2-NNV"/>
-                    <constraint firstItem="tDM-au-3G9" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="top" id="FNt-qH-LuS"/>
-                    <constraint firstItem="32g-dC-aWi" firstAttribute="leading" secondItem="Wix-CX-kS1" secondAttribute="trailing" constant="17" id="Gmp-YN-UqO"/>
-                    <constraint firstItem="eX4-LK-8Db" firstAttribute="centerY" secondItem="Wix-CX-kS1" secondAttribute="centerY" id="JAO-mx-fAu"/>
-                    <constraint firstItem="tDM-au-3G9" firstAttribute="leading" secondItem="32g-dC-aWi" secondAttribute="trailing" constant="8" symbolic="YES" id="Kef-xY-Tmz"/>
-                    <constraint firstItem="eX4-LK-8Db" firstAttribute="top" secondItem="32g-dC-aWi" secondAttribute="top" id="P46-p3-apR"/>
-                    <constraint firstItem="tDM-au-3G9" firstAttribute="centerY" secondItem="U3D-BB-ThS" secondAttribute="centerY" id="PEZ-ee-rUy"/>
-                    <constraint firstItem="eX4-LK-8Db" firstAttribute="leading" secondItem="ldo-Fm-7My" secondAttribute="trailing" constant="8" symbolic="YES" id="RdU-yd-PF8"/>
-                    <constraint firstAttribute="bottom" secondItem="xDf-6A-lsN" secondAttribute="bottom" constant="3.5" id="UHv-e3-eA4"/>
-                    <constraint firstItem="ldo-Fm-7My" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="topMargin" id="WJr-PY-ooU"/>
-                    <constraint firstItem="32g-dC-aWi" firstAttribute="leading" secondItem="eX4-LK-8Db" secondAttribute="trailing" constant="8" symbolic="YES" id="m6B-EI-6qF"/>
-                    <constraint firstItem="ldo-Fm-7My" firstAttribute="baseline" secondItem="eX4-LK-8Db" secondAttribute="baseline" id="pFd-9g-iTE"/>
-                    <constraint firstItem="xDf-6A-lsN" firstAttribute="leading" secondItem="U3D-BB-ThS" secondAttribute="leading" constant="16" id="pzT-Iw-F3i"/>
-                    <constraint firstItem="ldo-Fm-7My" firstAttribute="firstBaseline" secondItem="eX4-LK-8Db" secondAttribute="firstBaseline" id="qx4-o4-P7z"/>
-                    <constraint firstAttribute="trailing" secondItem="tDM-au-3G9" secondAttribute="trailing" id="uff-X3-z9A"/>
-                    <constraint firstItem="Wix-CX-kS1" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="topMargin" constant="12" id="wX3-1B-B8U"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="topMargin" id="1M9-Mg-HGH"/>
+                    <constraint firstAttribute="trailing" secondItem="tDM-au-3G9" secondAttribute="trailing" id="5Vu-N5-Aq7"/>
+                    <constraint firstItem="32g-dC-aWi" firstAttribute="leading" secondItem="eX4-LK-8Db" secondAttribute="trailing" constant="8" symbolic="YES" id="7QT-fz-fgb"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="leading" secondItem="xDf-6A-lsN" secondAttribute="leading" id="DWq-YH-aCE"/>
+                    <constraint firstItem="Wix-CX-kS1" firstAttribute="leading" secondItem="eX4-LK-8Db" secondAttribute="trailing" constant="18" id="EwB-lm-eTR"/>
+                    <constraint firstItem="tDM-au-3G9" firstAttribute="leading" secondItem="xDf-6A-lsN" secondAttribute="trailing" constant="8" symbolic="YES" id="Fvl-vA-Ieg"/>
+                    <constraint firstItem="xDf-6A-lsN" firstAttribute="top" secondItem="Wix-CX-kS1" secondAttribute="bottom" constant="19" id="LJi-lF-6Y4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xDf-6A-lsN" secondAttribute="bottom" constant="-7" id="LlH-OA-faG"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="firstBaseline" secondItem="eX4-LK-8Db" secondAttribute="firstBaseline" id="Mgh-J9-hjJ"/>
+                    <constraint firstItem="tDM-au-3G9" firstAttribute="leading" secondItem="32g-dC-aWi" secondAttribute="trailing" constant="8" symbolic="YES" id="NFF-cc-InW"/>
+                    <constraint firstItem="tDM-au-3G9" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="top" id="RNa-PO-DBC"/>
+                    <constraint firstItem="32g-dC-aWi" firstAttribute="centerX" secondItem="Wix-CX-kS1" secondAttribute="centerX" id="cbj-3A-mtS"/>
+                    <constraint firstItem="xDf-6A-lsN" firstAttribute="top" secondItem="32g-dC-aWi" secondAttribute="bottom" constant="9" id="f9T-G9-cKI"/>
+                    <constraint firstItem="eX4-LK-8Db" firstAttribute="leading" secondItem="ldo-Fm-7My" secondAttribute="trailing" constant="8" symbolic="YES" id="n0d-UT-7Is"/>
+                    <constraint firstItem="eX4-LK-8Db" firstAttribute="centerY" secondItem="Wix-CX-kS1" secondAttribute="centerY" id="rdm-0z-NuH"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="baseline" secondItem="eX4-LK-8Db" secondAttribute="baseline" id="sy3-Bs-fog"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="leading" secondItem="U3D-BB-ThS" secondAttribute="leadingMargin" id="tzT-Jc-oh5"/>
+                    <constraint firstItem="xDf-6A-lsN" firstAttribute="top" secondItem="ldo-Fm-7My" secondAttribute="bottom" constant="7" id="w6r-q9-u78"/>
+                    <constraint firstItem="eX4-LK-8Db" firstAttribute="top" secondItem="32g-dC-aWi" secondAttribute="top" id="xgk-BH-u9W"/>
+                    <constraint firstItem="tDM-au-3G9" firstAttribute="centerY" secondItem="U3D-BB-ThS" secondAttribute="centerY" id="y40-Ln-wZY"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
