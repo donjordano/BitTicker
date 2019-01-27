@@ -21,6 +21,7 @@ To run the project you just need to add your API & private keys in EndPoint swif
 
 ## Project Architecture 
 
+![alt tag](https://github.com/donjordano/BitTicker/blob/master/viper_architecture_graph.png)
 
 References:
 * [Viper architecture](https://www.objc.io/issues/13-architecture/viper/)
