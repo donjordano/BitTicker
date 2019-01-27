@@ -39,9 +39,9 @@
 		BC0F280E21FCC3EB008032D3 /* PairListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */; };
 		BC0F281221FD9B98008032D3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F281121FD9B98008032D3 /* Observable.swift */; };
 		BC766D1B21FDDE67004F11C1 /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC766D1A21FDDE66004F11C1 /* AnimationProtocol.swift */; };
+		BC766D1D21FDF77F004F11C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC766D1C21FDF77F004F11C1 /* Assets.xcassets */; };
 		BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */; };
 		BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFB21FA0D9400A59813 /* Main.storyboard */; };
-		BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */; };
 		BCFAB00221FA0D9500A59813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */; };
 		BCFAB00D21FA0D9500A59813 /* BitTickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB00C21FA0D9500A59813 /* BitTickerTests.swift */; };
 		BCFAB02B21FA0E7900A59813 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB01E21FA0E7900A59813 /* UIEdgeInsets.swift */; };
@@ -104,10 +104,10 @@
 		BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListTableViewCell.swift; sourceTree = "<group>"; };
 		BC0F281121FD9B98008032D3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		BC766D1A21FDDE66004F11C1 /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
+		BC766D1C21FDF77F004F11C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFAAFF421FA0D9400A59813 /* BitTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCFAAFFC21FA0D9400A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFAB00121FA0D9500A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCFAB00321FA0D9500A59813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFAB00821FA0D9500A59813 /* BitTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -464,10 +464,10 @@
 		BCFAB01921FA0E0900A59813 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BC766D1C21FDF77F004F11C1 /* Assets.xcassets */,
 				BCFAB03921FA138900A59813 /* BitTicker-Bridging-Header.h */,
 				BC0F27C121FC4FCD008032D3 /* GoogleService-Info.plist */,
 				BCFAAFFB21FA0D9400A59813 /* Main.storyboard */,
-				BCFAAFFE21FA0D9500A59813 /* Assets.xcassets */,
 				BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */,
 				BCFAB00321FA0D9500A59813 /* Info.plist */,
 				BC0F27E121FC6385008032D3 /* R.generated.swift */,
@@ -666,7 +666,7 @@
 				BC0F280A21FC9A14008032D3 /* PairDetailStoryboard.storyboard in Resources */,
 				BC0F27F821FC991B008032D3 /* PairsListStoryboard.storyboard in Resources */,
 				BC0F280C21FCC3E0008032D3 /* PairListTableViewCell.xib in Resources */,
-				BCFAAFFF21FA0D9500A59813 /* Assets.xcassets in Resources */,
+				BC766D1D21FDF77F004F11C1 /* Assets.xcassets in Resources */,
 				BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Ivan Yordanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class LogiRouter: LoginWireframe {
     

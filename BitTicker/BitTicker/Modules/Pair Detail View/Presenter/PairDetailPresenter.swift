@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class PairDetailPresenter: PairDetailPresentation {
+    var view: PairDetailView?
+    var wireframe: PairDetailWireframe!
+    var pairId: String!
+    
+    func viewDidLoad() {
+        view?.showDetails(forPair: pairId)
+    }
+}

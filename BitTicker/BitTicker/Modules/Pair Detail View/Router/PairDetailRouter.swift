@@ -6,4 +6,20 @@
 //  Copyright © 2019 Ivan Yordanov. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class PairDetailRouter: PairDetailWireframe {
+    static func assembleModule(_ pairId: String) -> UIViewController {
+        let view = R.storyboard.pairDetailStoryboard.pairDetailiViewController()
+        let presenter = PairDetailPresenter()
+        
+        view?.presenter = presenter
+        
+        presenter.view = view
+        presenter.pairId = pairId
+        
+        return view!
+    }
+
+}
+
