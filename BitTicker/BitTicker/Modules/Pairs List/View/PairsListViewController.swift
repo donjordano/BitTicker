@@ -68,8 +68,6 @@ extension PairsListViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell.setup(pair_labels[indexPath.row])
         
-        print(cell)
-        
         return cell
     }
 
