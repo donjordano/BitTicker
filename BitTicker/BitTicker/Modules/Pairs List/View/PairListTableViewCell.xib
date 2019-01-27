@@ -10,30 +10,46 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PairListTableViewCell" textLabel="SGF-88-oLw" detailTextLabel="IvB-R3-TVt" style="IBUITableViewCellStyleValue2" id="tJh-E5-iG5" customClass="PairListTableViewCell" customModule="BitTicker" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PairListTableViewCell" id="tJh-E5-iG5" customClass="PairListTableViewCell" customModule="BitTicker" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tJh-E5-iG5" id="U3D-BB-ThS">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SGF-88-oLw">
-                        <rect key="frame" x="16" y="14" width="91" height="16"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ldo-Fm-7My">
+                        <rect key="frame" x="15" y="5" width="180" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="0Qx-Eh-v4c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IvB-R3-TVt">
-                        <rect key="frame" x="113" y="14" width="35" height="16"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eX4-LK-8Db">
+                        <rect key="frame" x="259" y="5" width="100" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="MCn-fL-vGa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="leading" secondItem="U3D-BB-ThS" secondAttribute="leading" constant="15" id="BE4-de-BTW"/>
+                    <constraint firstAttribute="bottom" secondItem="eX4-LK-8Db" secondAttribute="bottom" constant="4.5" id="GjG-lD-4J4"/>
+                    <constraint firstAttribute="bottom" secondItem="ldo-Fm-7My" secondAttribute="bottom" constant="4.5" id="J2d-28-xBc"/>
+                    <constraint firstItem="ldo-Fm-7My" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="top" constant="5" id="O73-C7-bfN"/>
+                    <constraint firstAttribute="trailing" secondItem="eX4-LK-8Db" secondAttribute="trailing" constant="16" id="YRv-cI-Lw9"/>
+                    <constraint firstItem="eX4-LK-8Db" firstAttribute="top" secondItem="U3D-BB-ThS" secondAttribute="top" constant="5" id="ngU-4M-ABm"/>
+                </constraints>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="293.60000000000002" y="239.28035982008998"/>
+            <connections>
+                <outlet property="pairsLabel" destination="ldo-Fm-7My" id="xym-s8-Wzd"/>
+                <outlet property="percentLabel" destination="eX4-LK-8Db" id="G5G-Tk-3GI"/>
+            </connections>
+            <point key="canvasLocation" x="205.59999999999999" y="218.59070464767618"/>
         </tableViewCell>
     </objects>
 </document>

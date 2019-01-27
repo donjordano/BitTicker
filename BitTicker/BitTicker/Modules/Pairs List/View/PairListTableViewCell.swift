@@ -10,9 +10,13 @@ import UIKit
 
 class PairListTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var pairsLabel: UILabel!
+    @IBOutlet weak var percentLabel: UILabel!
+    var pairId: String = ""
+    
     func setup(_ pairString: String) {
-        let pairLabel = pairString.replacingOccurrences(of: "_", with: " - ")
-        self.textLabel?.text = pairLabel
+        let pairLabelText = pairString.replacingOccurrences(of: "_", with: " - ")
+        pairsLabel.text = pairLabelText
     }
     
 }

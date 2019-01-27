@@ -10,11 +10,12 @@ import Foundation
 
 struct Ticker {
     var tickerId: String
-    var lastPrice: Double
-    var lowestAsk: Double
-    var higestAsk: Double
-    var percent24: Double
-    var higestTrade24: Double
-    var lowestTrade24: Double
+    var lastPrice: String
+    var lowestAsk: String
+    var higestAsk: String
+    var percent24: String
+    var higestTrade24: String
+    var lowestTrade24: String
     var isFrozen: Bool
+    
 }
