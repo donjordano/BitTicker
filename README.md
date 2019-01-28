@@ -113,6 +113,7 @@ Used to manage the reachability. In this case I would like to notify a little is
 The assets were create in **SketchApp**. The **.sketchapp** is included in the repository.
 
 ## How it looks like?
+![alt tag](https://github.com/donjordano/BitTicker/blob/master/blobs/screenshots.png?raw=true)
 
 ## Support && contact
 
