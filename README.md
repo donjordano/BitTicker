@@ -2,11 +2,11 @@ BitTicker is an application help tracking crypto coins prices from different exc
 
 ## 🚨 Important note 🚨
 
-This project is using cocoapods. Please be sure to run the **pod install** command before running the project.
+This project is using cocoapods. Please be sure to run the ```bash pod install``` command before running the project.
 If you have any doubt about cocoapods you can check the reference [here](https://cocoapods.org).
 To run the project you just need to add your API & private keys in EndPoint swift file
 
-## Programming languages && Development tools
+## Development tools
 
 * Swift 4.2
 * Xcode 10.1
@@ -108,6 +108,9 @@ The project is using **Poloniex** WebSocket, documentation can be found [here](h
 ### ReachabilityManager
 
 Used to manage the reachability. In this case I would like to notify a little issue related with the simulator. *It seems Xcode has an issue with the simulator because if you try to turn off the wifi and turning on again, the observer for the state change is not triggering. It's working 100% fine in a real device*
+
+## Design 
+The assets were create in **SketchApp**. The **.sketchapp** is included in the repository.
 
 ## How it looks like?
 
