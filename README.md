@@ -20,7 +20,7 @@ If you have any doubt about cocoapods you can check the reference [here](https:/
 
 ## Project Architecture 
 
-![alt tag](https://github.com/donjordano/BitTicker/blob/master/viper_architecture_graph.png)
+![alt tag](https://github.com/donjordano/BitTicker/blob/master/blobs/viper_architecture_graph.png)
 
 References:
 * [Viper architecture](https://www.objc.io/issues/13-architecture/viper/)
