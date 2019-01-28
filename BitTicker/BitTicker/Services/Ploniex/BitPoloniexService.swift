@@ -51,36 +51,10 @@ class BitPoloniexService: NSObject, ObservedProtocol {
         
         /// websocketDidReceiveMessage
         socket?.onText = { (text: String) in
+            
+            /// escape the first message acknowledgement of the subscription.
             if text.count > 12 {
-                let index = text.index(text.startIndex, offsetBy: 12)
-                var beginning = text[index...]
-                
-                let range = beginning.index(beginning.endIndex, offsetBy: -2)..<beginning.endIndex
-                beginning.removeSubrange(range)
-                
-                let dataArray = beginning.split(separator: ",")
-                
-                let tickerId  = String(dataArray[0]).replacingOccurrences(of: "\"", with: "")
-                let lastPrice = Double(String(dataArray[1]).replacingOccurrences(of: "\"", with: ""))
-                let lowestAsk = Double(String(dataArray[2]).replacingOccurrences(of: "\"", with: ""))
-                let higestAsk = Double(String(dataArray[3]).replacingOccurrences(of: "\"", with: ""))
-                let percent24 = Double(String(dataArray[4]).replacingOccurrences(of: "\"", with: ""))
-                let isFrozen = String(dataArray[7]).toBool()
-                let higestTrade24 = Double(String(dataArray[8]).replacingOccurrences(of: "\"", with: ""))
-                let lowestTrade24 = Double(String(dataArray[9]).replacingOccurrences(of: "\"", with: ""))
-                
-                
-                let ticker = Ticker(tickerId: tickerId,
-                                    lastPrice: lastPrice!,
-                                    lowestAsk: lowestAsk!,
-                                    highestAsk: higestAsk!,
-                                    percent24: percent24!,
-                                    higestTrade24: higestTrade24!,
-                                    lowestTrade24: lowestTrade24!,
-                                    isFrozen: isFrozen
-                                    )
-                
-                
+                let ticker = Ticker(fromString: text)
                 self.notifyObservers(about: ticker)
             }
             
