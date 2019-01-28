@@ -4,7 +4,6 @@ BitTicker is an application help tracking crypto coins prices from different exc
 
 This project is using cocoapods. Please be sure to run the ```pod install``` command before running the project.
 If you have any doubt about cocoapods you can check the reference [here](https://cocoapods.org).
-To run the project you just need to add your API & private keys in EndPoint swift file
 
 ## Development tools
 
