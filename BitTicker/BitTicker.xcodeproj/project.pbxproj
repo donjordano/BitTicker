@@ -38,12 +38,14 @@
 		BC0F280C21FCC3E0008032D3 /* PairListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */; };
 		BC0F280E21FCC3EB008032D3 /* PairListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */; };
 		BC0F281221FD9B98008032D3 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0F281121FD9B98008032D3 /* Observable.swift */; };
+		BC4BC78121FEBD4300CE6AAD /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BC78021FEBD4300CE6AAD /* DateTests.swift */; };
+		BC4BC78421FEBE0F00CE6AAD /* EncryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BC78321FEBE0F00CE6AAD /* EncryptionTests.swift */; };
+		BC4BC78721FEBE5000CE6AAD /* TickerDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4BC78621FEBE5000CE6AAD /* TickerDataTests.swift */; };
 		BC766D1B21FDDE67004F11C1 /* AnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC766D1A21FDDE66004F11C1 /* AnimationProtocol.swift */; };
 		BC766D1D21FDF77F004F11C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC766D1C21FDF77F004F11C1 /* Assets.xcassets */; };
 		BCFAAFF821FA0D9400A59813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAAFF721FA0D9400A59813 /* AppDelegate.swift */; };
 		BCFAAFFD21FA0D9400A59813 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAAFFB21FA0D9400A59813 /* Main.storyboard */; };
 		BCFAB00221FA0D9500A59813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCFAB00021FA0D9500A59813 /* LaunchScreen.storyboard */; };
-		BCFAB00D21FA0D9500A59813 /* BitTickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB00C21FA0D9500A59813 /* BitTickerTests.swift */; };
 		BCFAB02B21FA0E7900A59813 /* UIEdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB01E21FA0E7900A59813 /* UIEdgeInsets.swift */; };
 		BCFAB02C21FA0E7900A59813 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02021FA0E7900A59813 /* UIColor.swift */; };
 		BCFAB02D21FA0E7900A59813 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAB02221FA0E7900A59813 /* Data.swift */; };
@@ -103,6 +105,9 @@
 		BC0F280B21FCC3E0008032D3 /* PairListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PairListTableViewCell.xib; sourceTree = "<group>"; };
 		BC0F280D21FCC3EB008032D3 /* PairListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairListTableViewCell.swift; sourceTree = "<group>"; };
 		BC0F281121FD9B98008032D3 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		BC4BC78021FEBD4300CE6AAD /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
+		BC4BC78321FEBE0F00CE6AAD /* EncryptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncryptionTests.swift; sourceTree = "<group>"; };
+		BC4BC78621FEBE5000CE6AAD /* TickerDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDataTests.swift; sourceTree = "<group>"; };
 		BC766D1A21FDDE66004F11C1 /* AnimationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationProtocol.swift; sourceTree = "<group>"; };
 		BC766D1C21FDF77F004F11C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCFAAFF421FA0D9400A59813 /* BitTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +116,6 @@
 		BCFAB00121FA0D9500A59813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCFAB00321FA0D9500A59813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFAB00821FA0D9500A59813 /* BitTickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitTickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCFAB00C21FA0D9500A59813 /* BitTickerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitTickerTests.swift; sourceTree = "<group>"; };
 		BCFAB00E21FA0D9500A59813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCFAB01E21FA0E7900A59813 /* UIEdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIEdgeInsets.swift; sourceTree = "<group>"; };
 		BCFAB02021FA0E7900A59813 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -384,6 +388,30 @@
 			path = Observable;
 			sourceTree = "<group>";
 		};
+		BC4BC77F21FEBD2100CE6AAD /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				BC4BC78021FEBD4300CE6AAD /* DateTests.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
+		BC4BC78221FEBDFC00CE6AAD /* Encrypton */ = {
+			isa = PBXGroup;
+			children = (
+				BC4BC78321FEBE0F00CE6AAD /* EncryptionTests.swift */,
+			);
+			path = Encrypton;
+			sourceTree = "<group>";
+		};
+		BC4BC78521FEBE4000CE6AAD /* TickerData */ = {
+			isa = PBXGroup;
+			children = (
+				BC4BC78621FEBE5000CE6AAD /* TickerDataTests.swift */,
+			);
+			path = TickerData;
+			sourceTree = "<group>";
+		};
 		BC766D1921FDDE43004F11C1 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,12 +447,11 @@
 				BC0F27B921FC4BBE008032D3 /* Modules */,
 				BC0F27B821FC4BB3008032D3 /* Models */,
 				BC0F27BA21FC4BE4008032D3 /* Services */,
-				BCFAB01921FA0E0900A59813 /* Resources */,
+				BCFAB01B21FA0E2000A59813 /* Managers */,
 				BC766D1921FDDE43004F11C1 /* Animations */,
 				BCFAB01821FA0DFA00A59813 /* Extensions */,
-				BCFAB01A21FA0E1600A59813 /* Network */,
-				BCFAB01B21FA0E2000A59813 /* Managers */,
 				BCFAB01721FA0DDB00A59813 /* Utils */,
+				BCFAB01921FA0E0900A59813 /* Resources */,
 			);
 			path = BitTicker;
 			sourceTree = "<group>";
@@ -432,7 +459,9 @@
 		BCFAB00B21FA0D9500A59813 /* BitTickerTests */ = {
 			isa = PBXGroup;
 			children = (
-				BCFAB00C21FA0D9500A59813 /* BitTickerTests.swift */,
+				BC4BC78521FEBE4000CE6AAD /* TickerData */,
+				BC4BC78221FEBDFC00CE6AAD /* Encrypton */,
+				BC4BC77F21FEBD2100CE6AAD /* Date */,
 				BCFAB00E21FA0D9500A59813 /* Info.plist */,
 			);
 			path = BitTickerTests;
@@ -473,13 +502,6 @@
 				BC0F27E121FC6385008032D3 /* R.generated.swift */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		BCFAB01A21FA0E1600A59813 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Network;
 			sourceTree = "<group>";
 		};
 		BCFAB01B21FA0E2000A59813 /* Managers */ = {
@@ -827,7 +849,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCFAB00D21FA0D9500A59813 /* BitTickerTests.swift in Sources */,
+				BC4BC78721FEBE5000CE6AAD /* TickerDataTests.swift in Sources */,
+				BC4BC78421FEBE0F00CE6AAD /* EncryptionTests.swift in Sources */,
+				BC4BC78121FEBD4300CE6AAD /* DateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
