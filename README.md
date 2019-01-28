@@ -122,4 +122,4 @@ You can contact me using my email: jordanov.ivan@gmai.com
 
 ### Twitter
 
-Follow me [@donjordano](http://twitter.com/donjordnao) on twitter.
+Follow me [@donjordano](http://twitter.com/donjordano) on twitter.
