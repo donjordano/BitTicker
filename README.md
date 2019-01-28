@@ -110,7 +110,7 @@ The project is using **Poloniex** WebSocket, documentation can be found [here](h
 Used to manage the reachability. In this case I would like to notify a little issue related with the simulator. *It seems Xcode has an issue with the simulator because if you try to turn off the wifi and turning on again, the observer for the state change is not triggering. It's working 100% fine in a real device*
 
 ## Design 
-The assets were create in **SketchApp**. The **.sketchapp** is included in the repository.
+The assets were create in **SketchApp**. The **.sketch** is included in the repository [here](https://github.com/donjordano/BitTicker/design)
 
 ## How it looks like?
 ![alt tag](https://github.com/donjordano/BitTicker/blob/master/blobs/screenshots.png?raw=true)
