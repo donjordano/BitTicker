@@ -1,5 +1,5 @@
-#ifndef iMarvel_Bridging_Header_h
-#define iMarvel_Bridging_Header_h
+#ifndef BitTicker_Bridging_Header_h
+#define BitTicker_Bridging_Header_h
 
 /// Reachability
 #import "Reachability.h"
