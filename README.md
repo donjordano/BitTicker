@@ -101,6 +101,19 @@ struct Ticker {
 ## 📻 Where the data is coming from?
 
 The project is using **Poloniex** WebSocket, documentation can be found [here](https://docs.poloniex.com/#websocket-api).
+The app is using ```subscribe``` and ```unsubscribe``` methods to ticker updates for all currency pairs.
+
+Subscription example:
+
+```{ "command": "subscribe", "channel": 1002 }```
+
+Subsequent messages are ticker updates.
+
+```[ <id>, null, [ <currency pair id>, "<last trade price>", "<lowest ask>", "<highest bid>", "<percent change in last 24 hours>", "<base currency volume in last 24 hours>", "<quote currency volume in last 24 hours>", <is frozen>, "<highest trade price in last 24 hours>", "<lowest trade price in last 24 hours>" ], ... ]```
+
+For example:
+
+```[ 1002, null, [ 149, "382.98901522", "381.99755898", "379.41296309", "-0.04312950", "14969820.94951828", "38859.58435407", 0, "412.25844455", "364.56122072" ] ]```
 
 ## 💡 Managers
 
